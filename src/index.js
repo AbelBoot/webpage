@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LocaleProvider from "./context/LocaleContext"
+import { HashRouter, Route } from "react-router-dom"
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Contact from './Contact';
+import { Container, ProjectContainer } from "./theme/Containers"
+//import { AboutMe } from './AboutMe';
+import { Projects } from './Projects';
+import { Header } from "./components/Header"
+import { GlobalStyle } from "./theme/GlobalStyle"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+  	<GlobalStyle />
+  	<HashRouter>
+  	<LocaleProvider>
+    
+    <Header />
+    <Container>
+		<Route exact path="/portfolio/" component={Projects}></Route>
+    <Route exact path="/portfolio/contact" component={Contact}></Route>
+		
+		
+    </Container>
+	</LocaleProvider>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+//<Route exact path="/about" component={AboutMe}></Route> 
+
