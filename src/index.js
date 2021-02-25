@@ -18,8 +18,8 @@ ReactDOM.render(
     
     <Header />
     <Container>
-		<Route exact path="/portfolio/" component={Projects}></Route>
-    <Route exact path="/portfolio/contact" component={Contact}></Route>
+		<Route exact path="/" component={Projects}></Route>
+    <Route exact path="/contact" component={Contact}></Route>
 		
 		
     </Container>
