@@ -12,8 +12,8 @@ export const Header = () => {
 			<>
 			<HeaderContainer>
 			<HeadDiv0><SpanCV>{HeaderText[0]}</SpanCV></HeadDiv0>
-			<HeaderLink to="/portfolio" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
-			<HeaderLink to="/portfolio/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink>			
+			<HeaderLink to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
+			<HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink>			
 			<HeadDiv1 onClick={updateLocale.bind(null, "fr")}>🇫🇷</HeadDiv1>
 			<HeadDiv1 onClick={updateLocale.bind(null, "en")}>🇬🇧</HeadDiv1>
 			<HeadDiv1 onClick={updateLocale.bind(null, "sp")}>🇪🇸</HeadDiv1>
