@@ -304,7 +304,7 @@ export const Projects = () => {
 				  lineHeight="1.2"
 				>RSC Advances
 				</A>
-				<A target="_blank" href="/papers/Dibenzodiazepines.pdf">
+				<A target="_blank" href="">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
@@ -328,7 +328,7 @@ export const Projects = () => {
 				  lineHeight="1.2"
 				>J. Am. Chem. Soc.
 				</A>
-				<A target="_blank" href="papers/Dibenzodiazepines.pdf">
+				<A target="_blank" href="">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
@@ -376,7 +376,7 @@ export const Projects = () => {
 				  >Organometallics
 				</A>
 			   
-				<A target="_blank" href="/papers/OM2009.pdf">
+				<A target="_blank" href="OM2009.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
@@ -402,7 +402,7 @@ export const Projects = () => {
 				  >J. Am. Chem. Soc.
 				</A>
 			   
-				<A target="_blank" href="/papers/JACS2010.pdf">
+				<A target="_blank" href="JACS2010.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
@@ -428,7 +428,7 @@ export const Projects = () => {
 				  >Organometallics
 				</A>
 			   
-				<A target="_blank" href="/papers/OM2011.pdf">
+				<A target="_blank" href="OM2011.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
@@ -454,7 +454,7 @@ export const Projects = () => {
 				  >Organometallics
 				</A>
 			   
-				<A target="_blank" href="/papers/OM2014.pdf">
+				<A target="_blank" href="OM2014.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDivSubCite_2>
