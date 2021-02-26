@@ -6,7 +6,7 @@ import { Form } from "./components/Form"
 import { ContactText2, ContactText3 } from "./components/Text"
 import { ContactContainer } from "./theme/Containers"
 import { ContactDiv1, ContactDiv2, ContactDiv3_00, ContactDiv3_01, ContactDiv3_02, ContactDiv3_03, ContactDiv3_04, ContactDiv3_05, ContactDiv3_06 } from "./theme/ContactStyle"
-import { A, SpanCV } from "./theme/SmallComp"
+iSpanCV } from "./theme/SmallComp"
 import { violet } from "./theme/variables"
 import { Icon } from "./components/Icons"
 
@@ -59,13 +59,13 @@ function Contact() {
     </ContactDiv3_05>
     <ContactDiv3_06>
                 {locale === "en" && 
-            <A target="_blank" href="/documents/Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>CV</SpanCV></A>}
+            <A target="_blank" href="Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>CV</SpanCV></A>}
             {locale === "fr" &&
-            <A target="_blank" href="/documents/Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Resume</SpanCV></A>}      
+            <A target="_blank" href="Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Resume</SpanCV></A>}      
             {locale === "sp" && 
-            <A target="_blank" href="/documents/Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Curriculum</SpanCV></A>}   
+            <A target="_blank" href="Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Curriculum</SpanCV></A>}   
             {locale === "pt" && 
-            <A target="_blank" href="/documents/Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Curriculum</SpanCV></A>}
+            <A target="_blank" href="Resume.pdf"><Icon name="resume" color={violet}/><SpanCV>Curriculum</SpanCV></A>}
     </ContactDiv3_06>
 
     </ContactDiv3_00>

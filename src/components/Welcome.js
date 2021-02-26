@@ -19,7 +19,7 @@ export const Welcome = () => {
 			  <WCDiv1_03>
               <A 
                 target="_blank" 
-                href="/documents/Resume.pdf"
+                href="Resume.pdf"
                 lineHeight="3.5"
                 ><SpanCV0>CV</SpanCV0></A>
               </WCDiv1_03>
