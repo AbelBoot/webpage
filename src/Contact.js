@@ -6,7 +6,7 @@ import { Form } from "./components/Form"
 import { ContactText2, ContactText3 } from "./components/Text"
 import { ContactContainer } from "./theme/Containers"
 import { ContactDiv1, ContactDiv2, ContactDiv3_00, ContactDiv3_01, ContactDiv3_02, ContactDiv3_03, ContactDiv3_04, ContactDiv3_05, ContactDiv3_06 } from "./theme/ContactStyle"
-iSpanCV } from "./theme/SmallComp"
+import { A, SpanCV } from "./theme/SmallComp"
 import { violet } from "./theme/variables"
 import { Icon } from "./components/Icons"
 
