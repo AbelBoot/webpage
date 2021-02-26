@@ -193,7 +193,7 @@ export const Projects = () => {
 			  paddingTop="2"
 			  target="_blank" 
 			  href="https://www.tdx.cat/bitstream/handle/10803/79120/thesis_AbelLocati.pdf?sequence=1&isAllowed=y"
-			>these.</A>
+			>thèse.</A>
 			</>
 			}
 			{locale === "sp" && 
@@ -257,7 +257,7 @@ export const Projects = () => {
 				>
 				Journal of Chromatography A
 				</A>
-				<A target="_blank" href="/papers/JChrA2015.pdf">
+				<A target="_blank" href="JChrA2015.pdf">
 				   <Icon name="download" color={violet}/>
 				</A>
 				  <H5 textAlign="right">2015, 1409, 1, DOI: 10.1016/j.chroma.2015.07.025</H5>
