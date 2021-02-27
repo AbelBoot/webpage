@@ -25,7 +25,7 @@ export function Form(props){
 	return (
 		<>
 		<BigDivForm>
-		<FormContainer onSubmit={handleSubmit}>
+		<FormContainer onSubmit={handleSubmit} action="https://formspree.io/f/meqpbajv" method="POST">
 		<DivForm>
 		<LabelForm>
 			{locale === "en" && `Name: `}
