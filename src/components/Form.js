@@ -1,4 +1,4 @@
-import React, { useReducer, useContext, useState, useEffect } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import { LocaleContext } from "../context/LocaleContext"
 import { BigDivForm, DivForm, DivFormMess, InputForm, LabelForm, TextAreaForm, ButtonForm, PForm } from "../theme/FormStyle"
 import { FormContainer } from "../theme/Containers"
@@ -21,7 +21,7 @@ export function Form(props){
 		if (locale === "sp"){setPlaceHolder({placeHolderName:"Su Nombre", placeHolderEmail: "Su Email", placeHolderMessage: "Su Mensaje"})}		
 		if (locale === "pt"){setPlaceHolder({placeHolderName:"O Seu Nome", placeHolderEmail: "O Seu Email", placeHolderMessage: "Su Mensagem"})}		
 	}, [locale])
-//action="https://formspree.io/f/meqpbajv" method="POST">
+
 //onSubmit={handleSubmit}
 	return (
 		<>

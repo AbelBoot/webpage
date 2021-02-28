@@ -1,9 +1,8 @@
 import React from "react"
 import { Tab } from "./Tab"
-import { TabContainer, ListTab, LiActive, OlTabs } from "../theme/SmallComp"
-import { Container, Relative, Flex  } from "../theme/Containers"
-import styled  from "styled-components"
-import { css }  from "styled-components"
+//import { TabContainer, ListTab, LiActive, 
+import { OlTabs } from "../theme/SmallComp"
+//import { Container, Relative, Flex  } from "../theme/Containers"
 
 
 export default class Tabs extends React.Component {

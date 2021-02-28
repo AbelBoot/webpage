@@ -54,9 +54,9 @@ const IconsNonStdViewBox = {
     postgresql: "0 0 432.071 445.383"
 }
 
-const ClipPath = {
-	//nodejs: "M197.02 225.934v107.43h91.683v-107.43zm0 0"
-}
+// const ClipPath = {
+// 	//nodejs: "M197.02 225.934v107.43h91.683v-107.43zm0 0"
+// }
 
 //typescript rect wont work because path is white (TS
 //characters) and is generated before the violet rect
@@ -105,7 +105,7 @@ export const Icon = ({name, color = white, width = 36, height = 36}) => {
 		width={width} 
 		height={height}  
 		viewBox={IconsNonStdViewBox[name] ? IconsNonStdViewBox[name] : "0 0 32 32"}
-		anim={name == "reactAnim" ? name : null}
+		anim={name === "reactAnim" ? name : null}
 		>
 	<title>{name}</title>
 	{Array.isArray(Icons[name])
