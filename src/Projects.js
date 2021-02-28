@@ -222,52 +222,7 @@ export const Projects = () => {
 
 				<Tabs alignItems="center">
 
-				<div label="Molecularly Imprinted Polymers">
-				<PCDivSubInt1>
-				<PCDivSubVert_1 paddingRight="10" paddingLeft="4">
-				
-				  <Image img={"DeltamethrinVerticalBig"} 
-					bottom="2" 
-					right="5"
-					maxWidth="100"
-					height="40"/>
-				</PCDivSubVert_1> 
-				<PCDivSubVert_2>
-			{locale === "en" && <H5 marginBottom="5em">{ProjectsChem1[0]}</H5>}
-			{locale === "fr" && <H5 marginBottom="5em">{ProjectsChem1[1]}</H5>}		
-			{locale === "sp" && <H5 marginBottom="5em">{ProjectsChem1[2]}</H5>}	
-			{locale === "pt" && <H5 marginBottom="5em">{ProjectsChem1[3]}</H5>}
-				</PCDivSubVert_2>
-				
 
-				<PCDivSubCite>
-				<PCDivSubCite_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[0]}</H5>
-				</PCDivSubCite_1> 
-				<PCDivSubCite_2> 
-				<A 
-				  target="_blank" 
-				  href="https://www.sciencedirect.com/science/article/abs/pii/S0021967315009760"
-				  textAlign="right"
-				  lineHeight="1.2"
-				>
-				Journal of Chromatography A
-				</A>
-				<A target="_blank" href="JChrA2015.pdf">
-				   <Icon name="download" color={violet}/>
-				</A>
-				  <H5 textAlign="right">2015, 1409, 1, DOI: 10.1016/j.chroma.2015.07.025</H5>
-				</PCDivSubCite_2>
-				<PCDivSubCite_3>
-				</PCDivSubCite_3>
-				</PCDivSubCite>
-
-				</PCDivSubInt1> 
-				</div>
 			
 
 				<div label="Benzodiazepines and Ring Openings.">
@@ -341,6 +296,53 @@ export const Projects = () => {
 
 				</PCDivSubInt1> 
 				</div>
+
+
+
+				<div label="Molecularly Imprinted Polymers">
+				<PCDivSubInt1>
+				<PCDivSubVert_1 paddingRight="10" paddingLeft="4">
+				
+				  <Image img={"DeltamethrinVerticalBig"} 
+					bottom="2" 
+					right="5"
+					maxWidth="100"
+					height="40"/>
+				</PCDivSubVert_1> 
+				<PCDivSubVert_2>
+			{locale === "en" && <H5 marginBottom="5em">{ProjectsChem1[0]}</H5>}
+			{locale === "fr" && <H5 marginBottom="5em">{ProjectsChem1[1]}</H5>}		
+			{locale === "sp" && <H5 marginBottom="5em">{ProjectsChem1[2]}</H5>}	
+			{locale === "pt" && <H5 marginBottom="5em">{ProjectsChem1[3]}</H5>}
+				</PCDivSubVert_2>
+				<PCDivSubCite>
+				<PCDivSubCite_1> 
+				  <H5 
+					textAlign="right"
+					lineHeight="1.2"
+					fontFamily="Arial Narrow"
+					>{PCQuote[0]}</H5>
+				</PCDivSubCite_1> 
+				<PCDivSubCite_2> 
+				<A 
+				  target="_blank" 
+				  href="https://www.sciencedirect.com/science/article/abs/pii/S0021967315009760"
+				  textAlign="right"
+				  lineHeight="1.2"
+				>
+				Journal of Chromatography A
+				</A>
+				<A target="_blank" href="JChrA2015.pdf">
+				   <Icon name="download" color={violet}/>
+				</A>
+				  <H5 textAlign="right">2015, 1409, 1, DOI: 10.1016/j.chroma.2015.07.025</H5>
+				</PCDivSubCite_2>
+				<PCDivSubCite_3>
+				</PCDivSubCite_3>
+				</PCDivSubCite>
+				</PCDivSubInt1> 
+				</div>
+
 
 				<div label="C-H Bond Activation, C-C Bond Cleavage">
 				<PCDivSubInt1>

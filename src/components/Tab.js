@@ -14,7 +14,6 @@ export class Tab extends React.Component {
 
 		return (
 			<SpanTab><ListTab 
-				
 				onClick={this.onClick}
 				selected={activeTab === label}
 			>

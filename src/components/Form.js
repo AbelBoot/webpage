@@ -37,6 +37,7 @@ export function Form(props){
 		<InputForm 
 			name="name"
 			value={values.name || ""}
+			required="true"
 			placeholder={placeHolderValue.placeHolderName}
 			onChange={handleChange}
 			onBlur={handleBlur}
@@ -47,6 +48,7 @@ export function Form(props){
 		<InputForm 
 			type="email"
 			name="email"
+			required="true"
 			value={values.email || ""}
 			placeholder={placeHolderValue.placeHolderEmail}
 			onChange={handleChange}
@@ -63,6 +65,7 @@ export function Form(props){
 		<TextAreaForm 
 			name="message"
 			rows="5"
+			required="true"
 			value={values.message || ""}
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}

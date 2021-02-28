@@ -5,7 +5,6 @@ import { HeaderContainer } from "../theme/Containers"
 import { HeaderLink, HeadDiv0, HeadDiv1} from "../theme/HeaderStyle"
 import { HeaderText } from "../components/Text"
 
-
 export const Header = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 		return (
@@ -22,8 +21,3 @@ export const Header = () => {
 			</>
 			)
 }
-//<BigDiv></BigDiv>
-//<button onClick={localeVal.updateLocale}>Change language</button>	
-// onClick={value.updateLocale.bind("french")}
-//data-lang={"fr"}
-// <HeaderLink to="/about" style={{textDecoration: "none", marginTop: "4px"}}><Div> About Me </Div></HeaderLink>

@@ -20,7 +20,7 @@ export default class LocaleProvider extends React.Component {
 			<LocaleContext.Provider
 				value={this.state}
 			>
-			{this.props.children}
+			  {this.props.children}
 			</LocaleContext.Provider>
 			)
 	}
