@@ -35,6 +35,7 @@ export function useValidation(initialState, validateFunction){
 	}
 	function handleSubmit(e){
 		e.preventDefault()
+		console.log("handlesubmit")
 		const errorsObtained = validateFunction(values)
 		setErrors(errorsObtained)
 		setSubmitting(true)

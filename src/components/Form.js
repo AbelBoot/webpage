@@ -21,11 +21,12 @@ export function Form(props){
 		if (locale === "sp"){setPlaceHolder({placeHolderName:"Su Nombre", placeHolderEmail: "Su Email", placeHolderMessage: "Su Mensaje"})}		
 		if (locale === "pt"){setPlaceHolder({placeHolderName:"O Seu Nome", placeHolderEmail: "O Seu Email", placeHolderMessage: "Su Mensagem"})}		
 	}, [locale])
-
+//action="https://formspree.io/f/meqpbajv" method="POST">
+//onSubmit={handleSubmit}
 	return (
 		<>
 		<BigDivForm>
-		<FormContainer onSubmit={handleSubmit} action="https://formspree.io/f/meqpbajv" method="POST">
+		<FormContainer  action="https://formspree.io/f/meqpbajv"  method="POST">
 		<DivForm>
 		<LabelForm>
 			{locale === "en" && `Name: `}
@@ -44,6 +45,7 @@ export function Form(props){
 		/>
 		<LabelForm>Email: </LabelForm>
 		<InputForm 
+			type="email"
 			name="email"
 			value={values.email || ""}
 			placeholder={placeHolderValue.placeHolderEmail}
@@ -65,7 +67,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}
 		/>
-		<ButtonForm type="submit" value="Submit">Submit</ButtonForm>
+		<ButtonForm type="submit" value="Send">Submit</ButtonForm>
 		</DivFormMess>
 		</FormContainer>
 		</BigDivForm>	
