@@ -107,7 +107,7 @@ export const ProjectChemDivSub3_Container = styled.div`
 export const ContactContainer = styled.div`
   display: flex;
   flex-direction: row;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
 `
 
 export const FormContainer = styled.form`

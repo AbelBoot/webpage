@@ -17,9 +17,7 @@ export const ContactDiv3_00 = styled.div`
 	flex-basis: 100%;
 	display:flex;
  	justify-content: center; 
-    margin: 10px;
-    padding-top: 12vh;
-
+  margin-top: 12vh;
 `
 export const ContactDiv3_01 = styled.div` 
   margin: 10px
