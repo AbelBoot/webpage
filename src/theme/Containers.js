@@ -70,7 +70,7 @@ export const PCoContainerSub2 = styled.div`
 
 
 
-export const ProjectChemistryContainer = styled.div`
+export const PCContainer = styled.div`
   
   display: flex;
   flex-direction: row;

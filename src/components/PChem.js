@@ -1,8 +1,7 @@
 import React, { useContext } from "react"
 import { LocaleContext } from "../context/LocaleContext"
-import { H5, A } from "../theme/SmallComp"
+import { Image, H5, A } from "../theme/SmallComp"
 import Tabs from "./Tabs"
-import { Image } from "../theme/GlobalStyle"
 import { Icon } from "./Icons"
 import { violet } from "../theme/variables"
 import { PCQuote, ProjectsChem0, ProjectsChem4, ProjectsChem5, ProjectsChem2, ProjectsChem1, ProjectsChem3 } from "./Text"
@@ -112,7 +111,7 @@ export const PChem = () => {
 				  lineHeight="1.2"
 				>RSC Advances
 				</A>
-				<A target="_blank" href="">
+				<A target="_blank" href="RSCAdv2013.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDIVQ_2>
@@ -136,7 +135,7 @@ export const PChem = () => {
 				  lineHeight="1.2"
 				>J. Am. Chem. Soc.
 				</A>
-				<A target="_blank" href="">
+				<A target="_blank" href="JACS2014.pdf">
 				  <Icon name="download" color={violet}/>
 				</A>
 				</PCDIVQ_2>

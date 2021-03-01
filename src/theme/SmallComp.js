@@ -233,6 +233,20 @@ export const DivArrow = styled.div`
   }
  `
 
+export const Image = styled.img.attrs(props => ({
+  src: `${props.img}.png`,// || Myimg,
+}))`
+  bottom: ${props => props.bottom}vw;
+  right: ${props => props.right}vw;
+    max-width: ${props => props.maxWidth}%;
+    height: ${props => props.height}vw; 
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+
+`
+
+
 const rotation = keyframes`
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

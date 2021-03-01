@@ -14,26 +14,26 @@ export const HeaderText = [
 
 //Welcome
 
-export const ProjectText1 = [
-	"Welcome to my website and extended",//, that would help me to get a job in web development. Or whatever roles related to JavaScript.",
-	"Bienvenue sur ma page web personnelle!",
-	"¡Bienvenido a mi página web!",
-	"Bem-vindo ao meu site!"
-	]
-
-export const ProjectText2 = [
-    "I am seeking for a web development job opportunity in roles related to JavaScript and React.",
-	"Ce petit site se veut être une sorte de CV “plus”, afin de pouvoir trouver un opportunité dans le domaine de la programmation. ",
-	"Esta pequeño site está destinada a ser una especie de currículum extendido, que me ayudaría a conseguir un trabajo de desarrollador web. ",
-	"Esta pequena página pretende ser algum tipo de currículo estendido, que me ajudaria a conseguir um emprego em programaçao. " 
-	]
-
-export const ProjectText3 = [
-	"Or whatever roles related to JavaScript or React.",
-	"O algo relacionado con JavaScript o React.",
-	"O cualquier trabajo que sea relacionado con JavaScript or React.",
-	"Ou quaisquer funções relacionadas ao JavaScript, o React."
-	]
+//for the below, used inline instead
+// export const ProjectText1 = [
+// 	"Welcome to my website and extended",//, that would help me to get a job in web development. Or whatever roles related to JavaScript.",
+// 	"Bienvenue sur ma page web personnelle!",
+// 	"¡Bienvenido a mi página web!",
+// 	"Bem-vindo ao meu site!"
+// 	]
+// export const ProjectText2 = [
+//     "I am seeking for a web development job opportunity in roles related to JavaScript and React.",
+// 	"Cette page se veut être une sorte de CV “plus”, afin de pouvoir trouver un job dans le domaine de la programmation. ",
+// 	"Esta pagina está destinada a ser una especie de currículum extendido, que me ayudaría a conseguir un trabajo de desarrollador web. ",
+// 	"Esta pequena página pretende ser algum tipo de currículo estendido, que me ajudaria a conseguir um emprego em programaçao. " 
+// 	]
+// not used
+// export const ProjectText3 = [
+// 	"Or whatever roles related to JavaScript or React.",
+// 	"O algo relacionado con JavaScript o React.",
+// 	"O cualquier trabajo que sea relacionado con JavaScript or React.",
+// 	"Ou quaisquer funções relacionadas ao JavaScript, o React."
+// 	]
 
 //Drone Part
 
