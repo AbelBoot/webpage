@@ -23,10 +23,12 @@ export function Form(props){
 	}, [locale])
 
 //onSubmit={handleSubmit}
+//https://formcarry.com/s/YKms8OaO9n
+//https://formspree.io/f/meqpbajv
 	return (
 		<>
 		<BigDivForm>
-		<FormContainer  action="https://formspree.io/f/meqpbajv"  method="POST">
+		<FormContainer  action="https://formcarry.com/s/YKms8OaO9n"  method="POST">
 		<DivForm>
 		<LabelForm>
 			{locale === "en" && `Name: `}

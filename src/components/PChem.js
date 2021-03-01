@@ -154,7 +154,7 @@ export const PChem = () => {
 				<div label="Molecularly Imprinted Polymers">
 				<PCDIVInt1>
 				<PCDIVVERT_1 paddingRight="10" paddingLeft="4">
-				  <Image img={"DeltamethrinVERTicalBig"} 
+				  <Image img={"DeltamethrinVerticalBig"} 
 					bottom="2" 
 					right="5"
 					maxWidth="100"
