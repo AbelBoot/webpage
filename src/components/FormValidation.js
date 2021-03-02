@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react"
+import axios from "axios"
 
 export default function validateFunction(values){
 	let errors = {}
@@ -38,7 +39,30 @@ export function useValidation(initialState, validateFunction){
 		console.log("handlesubmit")
 		const errorsObtained = validateFunction(values)
 		setErrors(errorsObtained)
+		console.log("errorsObtained", errorsObtained)
+		console.log("values", values)
 		setSubmitting(true)
+		axios.post(
+        "https://formcarry.com/s/YKms8OaO9n", 
+        values, 
+        {headers: {"Accept": "application/json"}}
+      )
+      .then(function (response) {
+        console.log("response data", response.data)
+        // access response.data in order to check formcarry response
+        if(response.data.success){
+          console.log("reponse data success", response.data)
+        } else {
+          // handle error
+          console.log("reponse error", response.data.message);
+        }
+ 
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    
+    e.preventDefault();
 }
 
 	return {values, handleChange, handleSubmit, errors, isSubmitting }

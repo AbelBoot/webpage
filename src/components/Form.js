@@ -25,10 +25,11 @@ export function Form(props){
 //onSubmit={handleSubmit}
 //https://formcarry.com/s/YKms8OaO9n
 //https://formspree.io/f/meqpbajv
+ //action="https://formcarry.com/s/YKms8OaO9n"  method="POST">
 	return (
 		<>
 		<BigDivForm>
-		<FormContainer  action="https://formcarry.com/s/YKms8OaO9n"  method="POST">
+		<FormContainer onSubmit={handleSubmit}>
 		<DivForm>
 		<LabelForm>
 			{locale === "en" && `Name: `}
@@ -72,7 +73,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}
 		/>
-		<InputForm type="hidden" name="_next" value="https://www.lemonde.fr" />
+
 		<ButtonForm type="submit" value="Send">Submit</ButtonForm>
 		</DivFormMess>
 		</FormContainer>
@@ -82,7 +83,7 @@ export function Form(props){
 		)
 }
 
-
+//<InputForm type="hidden" name="_next" value="https://www.lemonde.fr" />
 // Useless because my validation is actually a reducer already (?)
 // function reducer(state, {field, value}){
 // 		console.log("state", state)
