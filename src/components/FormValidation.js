@@ -34,21 +34,23 @@ export function useValidation(initialState, validateFunction){
 			[e.target.name]: e.target.value
 		})	
 	}
+			// axios.post(
+  //       "https://formcarry.com/s/YKms8OaO9n", 
+  //       values, 
+  //       {headers: {"Accept": "application/json"}}
+  //     )
 	function handleSubmit(e){
 		e.preventDefault()
-		console.log("handlesubmit")
 		const errorsObtained = validateFunction(values)
 		setErrors(errorsObtained)
-		console.log("errorsObtained", errorsObtained)
-		console.log("values", values)
-		setSubmitting(true)
-		axios.post(
-        "https://formcarry.com/s/YKms8OaO9n", 
-        values, 
-        {headers: {"Accept": "application/json"}}
-      )
-      .then(function (response) {
-        console.log("response data", response.data)
+	    setSubmitting(true)
+		fetch('https://formcarry.com/s/YKms8OaO9n', {
+           method: "POST",
+           headers: {'Content-Type': 'application/json', "Accept": "application/json"},
+           body: JSON.stringify({"name": values.name, "email": values.email, "message": values.message}),
+        })
+        .then(function (response) {
+        console.log("response", response)
         // access response.data in order to check formcarry response
         if(response.data.success){
           console.log("reponse data success", response.data)
