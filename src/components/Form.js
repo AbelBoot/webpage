@@ -72,7 +72,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}
 		/>
-		<InputForm type="hidden" name="_next" value="https://AbelBoot.github.io/portfolio/#/" />
+		<InputForm type="hidden" name="_next" value="https://www.lemonde.fr" />
 		<ButtonForm type="submit" value="Send">Submit</ButtonForm>
 		</DivFormMess>
 		</FormContainer>
