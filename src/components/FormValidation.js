@@ -34,11 +34,6 @@ export function useValidation(initialState, validateFunction){
 			[e.target.name]: e.target.value
 		})	
 	}
-			// axios.post(
-  //       "https://formcarry.com/s/YKms8OaO9n", 
-  //       values, 
-  //       {headers: {"Accept": "application/json"}}
-  //     )
 	function handleSubmit(e){
 		e.preventDefault()
 		const errorsObtained = validateFunction(values)
@@ -51,12 +46,8 @@ export function useValidation(initialState, validateFunction){
         })
         .then(function (response) {
         console.log("response", response)
-        // access response.data in order to check formcarry response
-        if(response.data.success){
-          console.log("reponse data success", response.data)
+        if(response.status === 200){
         } else {
-          // handle error
-          console.log("reponse error", response.data.message);
         }
  
       })
@@ -64,7 +55,7 @@ export function useValidation(initialState, validateFunction){
         console.log(error);
       });
     
-    e.preventDefault();
+    //e.preventDefault();
 }
 
 	return {values, handleChange, handleSubmit, errors, isSubmitting }
