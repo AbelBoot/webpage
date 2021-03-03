@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react"
-import axios from "axios"
-
+let success = false
 export default function validateFunction(values){
 	let errors = {}
+	
 	if (!values.email){
 		errors.email = "Email required"
 	} else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/.test(values.email.toString())) {
@@ -28,6 +28,7 @@ export function useValidation(initialState, validateFunction){
 			}
 		}
 	}, [errors])
+	
 	function handleChange(e){
 		setValues({
 			...values,
@@ -35,9 +36,10 @@ export function useValidation(initialState, validateFunction){
 		})	
 	}
 	function handleSubmit(e){
-		e.preventDefault()
+		e.preventDefault()		
 		const errorsObtained = validateFunction(values)
 		setErrors(errorsObtained)
+		console.log("errorsObtained", errorsObtained)
 	    setSubmitting(true)
 		fetch('https://formcarry.com/s/YKms8OaO9n', {
            method: "POST",
@@ -47,6 +49,7 @@ export function useValidation(initialState, validateFunction){
         .then(function (response) {
         console.log("response", response)
         if(response.status === 200){
+           success = true
         } else {
         }
  
@@ -55,10 +58,10 @@ export function useValidation(initialState, validateFunction){
         console.log(error);
       });
     
-    //e.preventDefault();
+    e.preventDefault();
 }
 
-	return {values, handleChange, handleSubmit, errors, isSubmitting }
+	return {values, handleChange, handleSubmit, errors, isSubmitting, success }
 }
 
 	// function handleBlur(){

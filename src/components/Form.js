@@ -12,7 +12,7 @@ const initialVal = {
 export function Form(props){
 
 	const { locale } = useContext(LocaleContext)
-		const { values, handleChange, handleSubmit, handleBlur, errors, isSubmitting  } 
+		const { values, handleChange, handleSubmit, handleBlur, errors, isSubmitting, success  } 
 		= useValidation(initialVal, validateFunction)
 	const [placeHolderValue, setPlaceHolder] = useState({placeHolderName: "Your Name", placeHolderEmail: "Your Email", placeHolderMessage: "Your message"})
 	useEffect(() => {
@@ -21,6 +21,7 @@ export function Form(props){
 		if (locale === "sp"){setPlaceHolder({placeHolderName:"Su Nombre", placeHolderEmail: "Su Email", placeHolderMessage: "Su Mensaje"})}		
 		if (locale === "pt"){setPlaceHolder({placeHolderName:"O Seu Nome", placeHolderEmail: "O Seu Email", placeHolderMessage: "Su Mensagem"})}		
 	}, [locale])
+
 
 //onSubmit={handleSubmit}
 //https://formcarry.com/s/YKms8OaO9n
@@ -56,7 +57,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderEmail}
 			onChange={handleChange}
 		/>
-		{errors.email && <PForm>{errors.email}</PForm>}	
+		{errors.email && <PForm>{errors.email}</PForm>}		
 		
 		</DivForm>
 		<DivFormMess>
@@ -73,7 +74,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}
 		/>
-
+        {success && <PForm>Thank you for your message!</PForm>}
 		<ButtonForm type="submit" value="Send">Submit</ButtonForm>
 		</DivFormMess>
 		</FormContainer>
