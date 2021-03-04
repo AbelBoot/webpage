@@ -13,7 +13,7 @@ export const Header = () => {
 
     const clearForm = () => {
 console.log("clearing form")
-    	success = false
+    	//success = false
     }
 
 		return (
