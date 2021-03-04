@@ -96,5 +96,6 @@ export const ButtonForm = styled.button`
 
 
 export const PForm = styled.p`
-  color: red;
+  color: ${violet};
+  font-weight: bold;
 `

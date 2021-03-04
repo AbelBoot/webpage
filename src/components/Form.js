@@ -21,7 +21,12 @@ export function Form(props){
 		if (locale === "sp"){setPlaceHolder({placeHolderName:"Su Nombre", placeHolderEmail: "Su Email", placeHolderMessage: "Su Mensaje"})}		
 		if (locale === "pt"){setPlaceHolder({placeHolderName:"O Seu Nome", placeHolderEmail: "O Seu Email", placeHolderMessage: "Su Mensagem"})}		
 	}, [locale])
-
+useEffect(() => {
+  // if (Object.keys(errors).length === 0) {
+   
+  // }
+  console.log("errorrrrs", errors)
+}, [errors, success]);
 
 //onSubmit={handleSubmit}
 //https://formcarry.com/s/YKms8OaO9n
@@ -30,7 +35,7 @@ export function Form(props){
 	return (
 		<>
 		<BigDivForm>
-		<FormContainer onSubmit={handleSubmit}>
+		<FormContainer noValidate onSubmit={handleSubmit}>
 		<DivForm>
 		<LabelForm>
 			{locale === "en" && `Name: `}
@@ -53,6 +58,7 @@ export function Form(props){
 			type="email"
 			name="email"
 			required="true"
+
 			value={values.email || ""}
 			placeholder={placeHolderValue.placeHolderEmail}
 			onChange={handleChange}

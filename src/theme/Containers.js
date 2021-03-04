@@ -113,7 +113,6 @@ export const ContactContainer = styled.div`
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  
   padding: 1em;
 `
 

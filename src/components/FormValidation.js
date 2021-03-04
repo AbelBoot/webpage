@@ -28,7 +28,7 @@ export function useValidation(initialState, validateFunction){
 			}
 		}
 	}, [errors])
-	
+
 	function handleChange(e){
 		setValues({
 			...values,
@@ -36,11 +36,13 @@ export function useValidation(initialState, validateFunction){
 		})	
 	}
 	function handleSubmit(e){
-		e.preventDefault()		
+		//e.preventDefault()		
 		const errorsObtained = validateFunction(values)
 		setErrors(errorsObtained)
 		console.log("errorsObtained", errorsObtained)
 	    setSubmitting(true)
+	   
+
 		fetch('https://formcarry.com/s/YKms8OaO9n', {
            method: "POST",
            headers: {'Content-Type': 'application/json', "Accept": "application/json"},
@@ -50,13 +52,16 @@ export function useValidation(initialState, validateFunction){
         console.log("response", response)
         if(response.status === 200){
            success = true
-        } else {
-        }
- 
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+           setValues(initialState)
+           setErrors({})
+        } else {}
+        })
+        .catch(function (error) {
+         console.log(error);
+         });
+
+	    
+
     
     e.preventDefault();
 }
