@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { LocaleContext } from "./context/LocaleContext"
 import { Form } from "./components/Form"
-import { ContactText2, ContactText3 } from "./components/Text"
+//import { ContactText1, ContactText2 } from "./components/Text"
 import { ContactContainer } from "./theme/Containers"
 import { CONTACTDIV1, CONTACTDIV2, CONTACTDIV3_00, CONTACTDIV3_01, CONTACTDIV3_02, CONTACTDIV3_03, CONTACTDIV3_04, CONTACTDIV3_05, CONTACTDIV3_06 } from "./theme/ContactStyle"
 import { A, SpanCV } from "./theme/SmallComp"
@@ -13,18 +13,18 @@ function Contact() {
   return (
     <>
 
-    {locale === "en" && <h2>{ContactText3[0]}</h2>}
-    {locale === "fr" && <h2>{ContactText3[1]}</h2>}
-    {locale === "sp" && <h2>{ContactText3[2]}</h2>}
-    {locale === "pt" && <h2>{ContactText3[3]}</h2>}
+    {locale === "en" && <h2>Contacts</h2>}
+    {locale === "fr" && <h2>Contacts</h2>}
+    {locale === "sp" && <h2>Contactos</h2>}
+    {locale === "pt" && <h2>Contactos</h2>}
     
        <ContactContainer>
 
             <CONTACTDIV1>
-            {locale === "en" && <h5>{ContactText2[0]}</h5>}
-            {locale === "fr" && <h5>{ContactText2[1]}</h5>}     
-            {locale === "sp" && <h5>{ContactText2[2]}</h5>} 
-            {locale === "pt" && <h5>{ContactText2[3]}</h5>}
+            {locale === "en" && <><h5>You can contact me using this web form, or by email.</h5><h5>You can also check my profile on the social media platforms listed below.</h5></>}
+            {locale === "fr" && <h5>Ci-dessous, vous trouverez quelques moyens pour me contacter. Vous pouvez également télécharger mon CV en format traditionnel.</h5>}     
+            {locale === "sp" && <h5>A continuación encontraran algunas formas de contactarme, y también puede descargar un currículum tradicional.</h5>} 
+            {locale === "pt" && <h5>Abaixo estão algumas maneiras pelas quais você pode entrar em contato comigo e também pode baixar um currículo antiquado.</h5>}
             </CONTACTDIV1>
             <CONTACTDIV2>
             <Form />

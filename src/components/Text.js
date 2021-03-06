@@ -140,20 +140,20 @@ export const PCQuote = [
 ]
 
 //Contact Me
+// Both below are now inline
+// export const ContactText1 = [
+// "Contacts",
+// "Contacts",
+// "Contactos",
+// "Contactos"
+// ]
 
-export const ContactText3 = [
-"Contacts",
-"Contacts",
-"Contactos",
-"Contactos"
-]
-
-export const ContactText2 = [	
-	`You can contact me using this web form, or by email. /You can also check my profile on the social media platforms listed below.`,// I am initially a chemist,  but I have been working in IT for the last few years. Right now my job is related to online advertising. When I don’t work, learning JavaScript is what I enjoy doing. And my objective is to get a job that would allow me to do it full time. In the Projects section, you’ll find some things I have been doing recently, mostly with drones. You’ll also see some of my research when I was still active in Chemistry. Below are a few ways you can contact me, and you can also download an old-fashioned resume.`,
-	"Ci-dessous, vous trouverez quelques moyens de me contacter, et vous pourrez également télécharger un CV traditionnel.", //Chimiste d’origine,  je travaille dans le support informatique depuis quelques années. En ce moment même, mon travail est lié à la publicité en ligne. Le reste du temps, je le passe à apprendre le JavaScript. Mon objectif étant d'obtenir un emploi qui me permettrait de le faire à plein temps. Dans la section Projets, vous trouverez certaines choses que j'ai faites récemment, principalement en lien avec des drones. Vous pourrez également voir certaines de mes recherches lorsque j'étais encore actif en chimie.",
-	"A continuación encontraran algunas formas de contactarme, y también puede descargar un currículum tradicional.", //" Químico de formación, he estado trabajando de técnico informático durante estos últimos años. Ahora mismo, mi trabajo está relacionado con la publicidad en línea. Cuando no trabajo, aprender JavaScript es lo que me gusta mas hacer. Y mi objetivo es conseguir un trabajo que me permita hacerlo a tiempo completo. En la sección Proyectos, encontrará algunas cosas que he estado haciendo recientemente, principalmente con drones. También verás algunas de mis investigaciones cuando todavía estaba activo en Química.",
-	"Abaixo estão algumas maneiras pelas quais você pode entrar em contato comigo e também pode baixar um currículo antiquado" // Inicialmente sou químico, mas trabalho com TI nos últimos anos. No momento, meu trabalho está relacionado à publicidade online. Quando não trabalho, aprendo JavaScript é o que gosto de fazer. E meu objetivo é conseguir um emprego que me permita fazê-lo em tempo integral. Na seção Projetos, você encontrará algumas coisas que venho fazendo recentemente, principalmente com drones. Você também verá algumas das minhas pesquisas quando eu ainda estava ativo em Química. ."
-	]
+// export const ContactText2 = [	
+// 	`You can contact me using this web form, or by email. /You can also check my profile on the social media platforms listed below.`,// I am initially a chemist,  but I have been working in IT for the last few years. Right now my job is related to online advertising. When I don’t work, learning JavaScript is what I enjoy doing. And my objective is to get a job that would allow me to do it full time. In the Projects section, you’ll find some things I have been doing recently, mostly with drones. You’ll also see some of my research when I was still active in Chemistry. Below are a few ways you can contact me, and you can also download an old-fashioned resume.`,
+// 	"Ci-dessous, vous trouverez quelques moyens pour me contacter, et vous pourrez également télécharger un CV traditionnel.", //Chimiste d’origine,  je travaille dans le support informatique depuis quelques années. En ce moment même, mon travail est lié à la publicité en ligne. Le reste du temps, je le passe à apprendre le JavaScript. Mon objectif étant d'obtenir un emploi qui me permettrait de le faire à plein temps. Dans la section Projets, vous trouverez certaines choses que j'ai faites récemment, principalement en lien avec des drones. Vous pourrez également voir certaines de mes recherches lorsque j'étais encore actif en chimie.",
+// 	"A continuación encontraran algunas formas de contactarme, y también puede descargar un currículum tradicional.", //" Químico de formación, he estado trabajando de técnico informático durante estos últimos años. Ahora mismo, mi trabajo está relacionado con la publicidad en línea. Cuando no trabajo, aprender JavaScript es lo que me gusta mas hacer. Y mi objetivo es conseguir un trabajo que me permita hacerlo a tiempo completo. En la sección Proyectos, encontrará algunas cosas que he estado haciendo recientemente, principalmente con drones. También verás algunas de mis investigaciones cuando todavía estaba activo en Química.",
+// 	"Abaixo estão algumas maneiras pelas quais você pode entrar em contato comigo e também pode baixar um currículo antiquado." // Inicialmente sou químico, mas trabalho com TI nos últimos anos. No momento, meu trabalho está relacionado à publicidade online. Quando não trabalho, aprendo JavaScript é o que gosto de fazer. E meu objetivo é conseguir um emprego que me permita fazê-lo em tempo integral. Na seção Projetos, você encontrará algumas coisas que venho fazendo recentemente, principalmente com drones. Você também verá algumas das minhas pesquisas quando eu ainda estava ativo em Química. ."
+// 	]
 
 
 
