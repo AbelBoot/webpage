@@ -4,10 +4,10 @@ export const PCODIV1 = styled.div`
   min-height: 20vh;
 `
 
-export const PCODIV2 = styled.div`
-	align-self: flex-end;
-	flex-basis: 80%;
-`
+// export const PCODIV2 = styled.div`
+// 	align-self: flex-end;
+// 	flex-basis: 80%;
+// `
 
 export const PCODIV2_00 = styled.div`
   	display: flex;
@@ -19,6 +19,7 @@ export const PCODIV2_01 = styled.div`
   	display: flex;
 	flex-direction: row;
 	padding-bottom: 3vh;
+	padding-top: 3vh;
 `
 export const PCODIV2_01_1 = styled.div`
 min-width: 20vh;

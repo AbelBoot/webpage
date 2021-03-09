@@ -25,7 +25,7 @@ export default class Tabs extends React.Component {
 				flexDirection={this.props.dir}>
 
 				{children.map((tab) => {
-				//console.log("props olTabs", this.props.maxWidth)
+				console.log("props olTabs", this.props)
 					return (
 						<Tab
 							key={tab.props.label}

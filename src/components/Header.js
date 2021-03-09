@@ -5,8 +5,7 @@ import { Emoji } from "./Emoji"
 import {useValidation} from "./FormValidation"
 import { HeaderContainer } from "../theme/Containers"
 import { HeaderLink, HeadDiv0, HeadDiv1} from "../theme/HeaderStyle"
-import { HeaderText } from "../components/Text"
-//span role="img" aria-label="test">
+
 export const Header = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	let { errors, success  } = useValidation()
@@ -19,7 +18,7 @@ console.log("clearing form")
 		return (
 			<>
 			<HeaderContainer>
-			<HeadDiv0><SpanCV>{HeaderText[0]}</SpanCV></HeadDiv0>
+			<HeadDiv0><SpanCV>Abel Locati</SpanCV></HeadDiv0>
 			<HeaderLink onClick={clearForm} to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
 			<HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink>			
 			<HeadDiv1 onClick={updateLocale.bind(null, "fr")}><Emoji label="" symbol="🇫🇷" /></HeadDiv1>

@@ -204,7 +204,7 @@ export const DivArrow = styled.div`
     left: 0;
     bottom: 0;
     height: 20%;
-    width: 100%;
+    min-width: 100%;
     background-color: ${pink};
       ${(props) => props.backgroundColor && `
     background-color: ${props.backgroundColor};

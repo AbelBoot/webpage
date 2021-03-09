@@ -5,6 +5,7 @@ import { FormContainer } from "../theme/Containers"
 import {useValidation} from "./FormValidation"
 import validateFunction from "./FormValidation"
 
+
 const initialVal = {
 		name: "", email: "", message:""
 	}
@@ -21,14 +22,7 @@ export function Form(props){
 		if (locale === "sp"){setPlaceHolder({placeHolderName:"Su Nombre", placeHolderEmail: "Su Email", placeHolderMessage: "Su Mensaje"})}		
 		if (locale === "pt"){setPlaceHolder({placeHolderName:"O Seu Nome", placeHolderEmail: "O Seu Email", placeHolderMessage: "Su Mensagem"})}		
 	}, [locale])
-// useEffect(() => {
-//   // if (Object.keys(errors).length === 0) {
-   
-//   // }
-//   console.log("errorrrrs", errors)
-// }, [errors, success]);
 
-//onSubmit={handleSubmit}
 //https://formcarry.com/s/YKms8OaO9n
 //https://formspree.io/f/meqpbajv
  //action="https://formcarry.com/s/YKms8OaO9n"  method="POST">
@@ -80,6 +74,7 @@ export function Form(props){
 			placeholder={placeHolderValue.placeHolderMessage}
 			onChange={handleChange}
 		/>
+		{errors.message && <PForm>{errors.message}</PForm>}	
         {success && <PForm>Thank you for your message!</PForm>}
 		<ButtonForm type="submit" value="Send">Submit</ButtonForm>
 		</DivFormMess>

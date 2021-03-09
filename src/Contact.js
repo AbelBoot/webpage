@@ -3,7 +3,7 @@ import { LocaleContext } from "./context/LocaleContext"
 import { Form } from "./components/Form"
 //import { ContactText1, ContactText2 } from "./components/Text"
 import { ContactContainer } from "./theme/Containers"
-import { CONTACTDIV1, CONTACTDIV2, CONTACTDIV3_00, CONTACTDIV3_01, CONTACTDIV3_02, CONTACTDIV3_03, CONTACTDIV3_04, CONTACTDIV3_05, CONTACTDIV3_06 } from "./theme/ContactStyle"
+import { CONTACTDIV0, CONTACTDIV1, CONTACTDIV2, CONTACTDIV3_00, CONTACTDIV3_01, CONTACTDIV3_02, CONTACTDIV3_03, CONTACTDIV3_04, CONTACTDIV3_05, CONTACTDIV3_06 } from "./theme/ContactStyle"
 import { A, SpanCV } from "./theme/SmallComp"
 import { violet } from "./theme/variables"
 import { Icon } from "./components/Icons"
@@ -19,16 +19,17 @@ function Contact() {
     {locale === "pt" && <h2>Contactos</h2>}
     
        <ContactContainer>
-
+        <CONTACTDIV0>
             <CONTACTDIV1>
             {locale === "en" && <><h5>You can contact me using this web form, or by email.</h5><h5>You can also check my profile on the social media platforms listed below.</h5></>}
-            {locale === "fr" && <h5>Ci-dessous, vous trouverez quelques moyens pour me contacter. Vous pouvez également télécharger mon CV en format traditionnel.</h5>}     
-            {locale === "sp" && <h5>A continuación encontraran algunas formas de contactarme, y también puede descargar un currículum tradicional.</h5>} 
-            {locale === "pt" && <h5>Abaixo estão algumas maneiras pelas quais você pode entrar em contato comigo e também pode baixar um currículo antiquado.</h5>}
+            {locale === "fr" && <><h5>Ci-dessous, vous trouverez quelques moyens pour me contacter.</h5><h5>Vous pouvez également télécharger mon CV en format traditionnel.</h5></>}     
+            {locale === "sp" && <><h5>A continuación encontraran algunas formas de contactarme.</h5><h5>También puede descargar un currículum tradicional.</h5></>} 
+            {locale === "pt" && <><h5>Entre em contato comigo utilizando o formulário web, o clicando nos links abaixo.</h5><h5>Também pode baixar um currículo estándar.</h5></>}
             </CONTACTDIV1>
             <CONTACTDIV2>
             <Form />
             </CONTACTDIV2>
+        </CONTACTDIV0>
             <CONTACTDIV3_00>
     <CONTACTDIV3_01>
     <A target="_blank" href="https://www.youtube.com/playlist?list=PLeFZ7j0suec_Z0_QH34AXxOHHvRzL7dht">

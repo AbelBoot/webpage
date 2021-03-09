@@ -1,30 +1,31 @@
 import React, { useContext } from "react"
 import { LocaleContext } from "../context/LocaleContext"
-import { Image, H5, A } from "../theme/SmallComp"
+import { H5, A } from "../theme/SmallComp"
+import { PChem1 } from "./PChem1"
+import { PChem2 } from "./PChem2"
+import { PChem3 } from "./PChem3"
 import Tabs from "./Tabs"
 import { Icon } from "./Icons"
-import { violet } from "../theme/variables"
-import { PCQuote, ProjectsChem0, ProjectsChem4, ProjectsChem5, ProjectsChem2, ProjectsChem1, ProjectsChem3 } from "./Text"
 import { PCContainer } from "../theme/Containers"
-import { PCDIVCONT, PCDIV1_1, PCDIV1_2, PCDIV1_2_00, PCDIV1_2_01, PCDIV1_2_02, PCDIV1_2_03, PCDIVInt1, PCDIVVERT_1, PCDIVVERT_2, PCDIVHORIZ_1, PCDIVHORIZ_2, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
+import { PCDIVCONT, PCDIV1_1, PCDIV1_2, PCDIV1_2_00, PCDIV1_2_01, PCDIV1_2_02, PCDIV1_2_03 } from "../theme/PChemStyle"
 
 export const PChem = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	return( <PCContainer>
 			<PCDIVCONT>
 			<PCDIV1_1>
-			{locale === "en" && <H5>{ProjectsChem0[0]}</H5>}
-			{locale === "fr" && <H5>{ProjectsChem0[1]}</H5>}		
-			{locale === "sp" && <H5>{ProjectsChem0[2]}</H5>}	
-			{locale === "pt" && <H5>{ProjectsChem0[3]}</H5>}	
+			{locale === "en" && <H5>I have worked as a researcher in Computational Chemistry until 2015. Computational chemistry is a branch of chemistry that applies some principles of theoretical chemistry to real-world applications. Understanding reaction mechanisms at a molecular level is one of these applications. Below are some of the topics I worked on, mostly in the field of homogeneous catalysis, and the links to the related papers I co-authored.</H5>}
+			{locale === "fr" && <H5>J'ai travaillé comme chercheur en chimie computationnelle jusqu'en 2015. La chimie computationnelle est une branche de la chimie qui applique certains principes de la chimie théorique à des problèmes réels. Un de ses buts est, entre autres, de déterminer des mécanismes réactionnels au niveau moléculaire. Vous trouverez ci-dessous quelques-uns des sujets sur lesquels j'ai pu travailler, principalement dans le domaine de la catalyse homogène. Les liens vers quelques articles que j'ai eu la chance de co-rédiger sont également disponibles.</H5>}		
+			{locale === "sp" && <H5>Trabajé como investigador en química computacional hasta 2015. La química computacional es un ramo de la química que aplica ciertos principios de la química teórica a problemas reales. Uno de sus objetivos es, entre otras cosas, determinar mecanismos de reacción a nivel molecular. A continuación se pueden ver algunos de los temas en los que pude trabajar, principalmente en el campo de la catálisis homogénea. También hay enlaces a algunos artículos de los cuales soy coautor.</H5>}	
+			{locale === "pt" && <H5>Trabalhei como pesquisador em química computacional até 2015. A química computacional é um ramo da química que aplica certos princípios da química teórica a problemas reais. Um dos seus objetivos é determinar mecanismos de reação a nível molecular. Abaixo estão alguns dos tópicos nos quais pude trabalhar, principalmente na catálise homogênea.</H5>}	
 			</PCDIV1_1>
 			<PCDIV1_2>
 			<PCDIV1_2_00>
 			<PCDIV1_2_01>
-			{locale === "en" && <H5>{ProjectsChem4[0]}</H5>}
-			{locale === "fr" && <H5>{ProjectsChem4[1]}</H5>}		
-			{locale === "sp" && <H5>{ProjectsChem4[2]}</H5>}	
-			{locale === "pt" && <H5>{ProjectsChem4[3]}</H5>}	
+         	{locale === "en" && <H5>For a full list of my publications, you can check Google Scholars: </H5>}
+			{locale === "fr" && <H5>Pour une liste complète, consultez Google Scholars: </H5>}		
+			{locale === "sp" && <H5>Para una lista completa, aquí esta el enlace a Google Scholars: </H5>}	
+			{locale === "pt" && <H5>Para uma lista completa, aquí esta el link a Google Scholars: </H5>}	
 			</PCDIV1_2_01>
 			<PCDIV1_2_02>
 			<A target="_blank" href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=abel+locati&btnG=" >
@@ -32,8 +33,8 @@ export const PChem = () => {
 			</A>
 			</PCDIV1_2_02>
 			<PCDIV1_2_03>
-			{locale === "en" && 
-			<><H5>{ProjectsChem5[0]}</H5>
+            {locale === "en" && 
+			<><H5>or look at my </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
@@ -42,7 +43,7 @@ export const PChem = () => {
 			</>
 			}
 			{locale === "fr" && 
-			<><H5>{ProjectsChem5[1]}</H5>
+			<><H5>ou jetez un coup d'œil à ma </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
@@ -51,21 +52,21 @@ export const PChem = () => {
 			</>
 			}
 			{locale === "sp" && 
-			<><H5>{ProjectsChem5[2]}</H5>
+			<><H5>o consulte mi </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
 			  href="https://www.tdx.cat/bitstream/handle/10803/79120/thesis_AbelLocati.pdf?sequence=1&isAllowed=y"
-			>doctorado.</A>
+			>tesis doctoral.</A>
 			</>
 			}
 			{locale === "pt" && 
-			<><H5>{ProjectsChem5[3]}</H5>
+			<><H5>o olha o meu </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
 			  href="https://www.tdx.cat/bitstream/handle/10803/79120/thesis_AbelLocati.pdf?sequence=1&isAllowed=y"
-			>doutoramento.</A>
+			>tese doutoral.</A>
 			</>
 			}		
 			</PCDIV1_2_03>
@@ -73,257 +74,61 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-
-				<Tabs alignItems="center">
-
-
-			
-
-				<div label="Benzodiazepines and Ring Openings.">
-				<PCDIVInt1>
-
-				<PCDIVVERT_1 paddingRight="3" paddingLeft="1">
-                {locale === "en" && <H5 marginBottom="3em">{ProjectsChem2[0]}</H5>}
-			{locale === "fr" && <H5 marginBottom="3em">{ProjectsChem2[1]}</H5>}		
-			{locale === "sp" && <H5 marginBottom="3em">{ProjectsChem2[2]}</H5>}	
-			{locale === "pt" && <H5 marginBottom="3em">{ProjectsChem2[3]}</H5>}
-			</PCDIVVERT_1> 
-				<PCDIVVERT_2>
-                    <Image img={"dibenzoTS"} 
-					bottom="2" 
-					right="5"
-					height="25"/>
-				</PCDIVVERT_2>
-
-				<PCDIVQ>
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[1]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.rsc.org/en/content/articlelanding/2015/ra/c5ra19599c/unauth#!divAbstract"
-				  textAlign="right"
-				  lineHeight="1.2"
-				>RSC Advances
-				</A>
-				<A target="_blank" href="RSCAdv2013.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				<H5 
-				  marginBottom="30"
-				  textAlign="right">2015, 5, 99990-99999, DOI: 10.1039/C5RA19599C</H5>
-				</PCDIVQ_3>
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[2]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.acs.org/doi/10.1021/ja412547r"
-				  textAlign="right"
-				  lineHeight="1.2"
-				>J. Am. Chem. Soc.
-				</A>
-				<A target="_blank" href="JACS2014.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				<H5
-				  marginBottom="30" 
-				  textAlign="right">2014, 136, 14, 5342-5350, DOI: 10.1021/ja412547r</H5>
-				</PCDIVQ_3>	
-				</PCDIVQ>
-
-				</PCDIVInt1> 
+        {locale === "en" && 
+        	<Tabs alignItems="center">
+				<div label="Benzodiazepines and Ring Openings">
+				  <PChem1 />
 				</div>
-
-
-
 				<div label="Molecularly Imprinted Polymers">
-				<PCDIVInt1>
-				<PCDIVVERT_1 paddingRight="10" paddingLeft="4">
-				  <Image img={"DeltamethrinVerticalBig"} 
-					bottom="2" 
-					right="5"
-					maxWidth="100"
-					height="40"/>
-				</PCDIVVERT_1> 
-				<PCDIVVERT_2>
-			{locale === "en" && <H5 marginBottom="5em">{ProjectsChem1[0]}</H5>}
-			{locale === "fr" && <H5 marginBottom="5em">{ProjectsChem1[1]}</H5>}		
-			{locale === "sp" && <H5 marginBottom="5em">{ProjectsChem1[2]}</H5>}	
-			{locale === "pt" && <H5 marginBottom="5em">{ProjectsChem1[3]}</H5>}
-				</PCDIVVERT_2>
-				<PCDIVQ>
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[0]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://www.sciencedirect.com/science/article/abs/pii/S0021967315009760"
-				  textAlign="right"
-				  lineHeight="1.2"
-				>
-				Journal of Chromatography A
-				</A>
-				<A target="_blank" href="JChrA2015.pdf">
-				   <Icon name="download" color={violet}/>
-				</A>
-				  <H5 textAlign="right">2015, 1409, 1, DOI: 10.1016/j.chroma.2015.07.025</H5>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				</PCDIVQ_3>
-				</PCDIVQ>
-				</PCDIVInt1> 
+				  <PChem2 />
 				</div>
-
-
 				<div label="C-H Bond Activation, C-C Bond Cleavage">
-				<PCDIVInt1>
-				
-				<PCDIVHORIZ_1>
-				<Image img={"NbReaction"} 
-					bottom="2" 
-					right="5"
-					height="20"/>
-				</PCDIVHORIZ_1> 
-				<PCDIVHORIZ_2>
-			{locale === "en" && <H5 marginBottom="3em">{ProjectsChem3[0]}</H5>}
-			{locale === "fr" && <H5 marginBottom="3em">{ProjectsChem3[1]}</H5>}		
-			{locale === "sp" && <H5 marginBottom="3em">{ProjectsChem3[2]}</H5>}	
-			{locale === "pt" && <H5 marginBottom="3em">{ProjectsChem3[3]}</H5>}
-				</PCDIVHORIZ_2>
-				 
-				<PCDIVQ> 
-
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[4]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.acs.org/doi/abs/10.1021/om800999a"
-				  textAlign="right"
-				  lineHeight="1.2"
-				  >Organometallics
-				</A>
-			   
-				<A target="_blank" href="OM2009.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				  <H5 
-				  marginBottom="30"
-				  textAlign="right">2009, 28, 4, 940-943, DOI: 10.1021/om800999a</H5>
-				</PCDIVQ_3>
-
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[3]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.acs.org/doi/abs/10.1021/ja1061505"
-				  textAlign="right"
-				  lineHeight="1.2"
-				  >J. Am. Chem. Soc.
-				</A>
-			   
-				<A target="_blank" href="JACS2010.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				  <H5 
-				  marginBottom="30"
-				  textAlign="right">2010, 132, 40, 14239-14250, DOI: 10.1021/ja1061505</H5>
-				</PCDIVQ_3>
-
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[5]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.acs.org/doi/abs/10.1021/om200199e"
-				  textAlign="right"
-				  lineHeight="1.2"
-				  >Organometallics
-				</A>
-			   
-				<A target="_blank" href="OM2011.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				  <H5 
-					marginBottom="30"
-					textAlign="right">2011, 30, 15, 3999-4007, DOI: 10.1021/om200199e</H5>
-				</PCDIVQ_3>
-
-				<PCDIVQ_1> 
-				  <H5 
-					textAlign="right"
-					lineHeight="1.2"
-					fontFamily="Arial Narrow"
-					>{PCQuote[6]}</H5>
-				</PCDIVQ_1> 
-				<PCDIVQ_2> 
-				<A 
-				  target="_blank" 
-				  href="https://pubs.acs.org/doi/abs/10.1021/om501056b"
-				  textAlign="right"
-				  lineHeight="1.2"
-				  >Organometallics
-				</A>
-			   
-				<A target="_blank" href="OM2014.pdf">
-				  <Icon name="download" color={violet}/>
-				</A>
-				</PCDIVQ_2>
-				<PCDIVQ_3>
-				  <H5 
-				  marginBottom="30"
-				  textAlign="right">2014, 33, 24, 7270-7278, DOI: 10.1021/om501056b</H5>
-				</PCDIVQ_3>
-
-				</PCDIVQ>
-
-				</PCDIVInt1> 
-
+				  <PChem3 />
 				</div>
+			</ Tabs>
+        }
+		{locale === "fr" && 
+			<Tabs alignItems="center">
+				<div label="Benzodiazépines et Ouvertures de Cycles">
+				  <PChem1 />
+				</div>
+				<div label="Polymères à empreinte moléculaire">
+				  <PChem2 />
+				</div>
+				<div label="Activation de liaisons C-H, Clivage de liaisons C-C">
+				  <PChem3 />
+				</div>
+			</ Tabs>
+    	}
+    			
+		{locale === "sp" && 
+			<Tabs alignItems="center">
+				<div label="Benzodiazepinas y apertura de anillos">
+				  <PChem1 />
+				</div>
+				<div label="Polímeros de impresión molecular">
+				  <PChem2 />
+				</div>
+				<div label="Activación de enlace C-H, Ruptura de enlaces C-C">
+				  <PChem3 />
+				</div>
+			</ Tabs>
+ 	    }	
+		{locale === "pt" && 
+			<Tabs alignItems="center">
+				<div label="Benzodiazepinas e abertura de anel">
+				  <PChem1 />
+				</div>
+				<div label="Polímeros com impressão molecular">
+				  <PChem2 />
+				</div>
+				<div label="Ativação de ligação C-H, Ruptura de ligação C-C">
+				  <PChem3 />
+				</div>
+			</ Tabs>
+	    }	
+	
 
-				</ Tabs>
 				</PCContainer>
 	    )
 }

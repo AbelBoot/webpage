@@ -1,5 +1,11 @@
 import styled  from "styled-components"
 
+
+export const CONTACTDIV0 = styled.div`
+  display: flex;
+  flex-direction: row;
+
+`
 export const CONTACTDIV1 = styled.div`
   width: 40%;
   font-size: 1em;
@@ -16,9 +22,12 @@ export const CONTACTDIV2 = styled.div`
 export const CONTACTDIV3_00 = styled.div` 
 	flex-basis: 100%;
 	display:flex;
- 	justify-content: center; 
-  margin-top: 12vh;
+ 	justify-content: center;
+  align-items: flex-end; 
+  padding-top: 5vh;
+  
 `
+//margin-top: 12vh;
 export const CONTACTDIV3_01 = styled.div` 
   margin: 10px
   
