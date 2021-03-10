@@ -89,22 +89,22 @@ export function useValidation(initialState, validateFunction){
 console.log("Object.keys(errors).length", Object.keys(errors).length)
 console.log("Object.keys", errors.email)
 		// fetch('https://formcarry.com/s/YKms8OaO9n', {
-		// fetch('https://formspree.io/f/meqpbajv', {
-  //          method: "POST",
-  //          headers: {'Content-Type': 'application/json', "Accept": "application/json"},
-  //          body: JSON.stringify({"name": values.name, "email": values.email, "message": values.message}),
-  //       })
-  //       .then(function (response) {
-  //       console.log("response", response)
-  //       if(response.status === 200){
-  //          success = true
-  //          setValues(initialState)
-  //          setErrors({})
-  //       } //else {}
-  //       })
-  //       .catch(function (error) {
-  //        console.log(error);
-  //        })
+		fetch('https://formspree.io/f/meqpbajv', {
+           method: "POST",
+           headers: {'Content-Type': 'application/json', "Accept": "application/json"},
+           body: JSON.stringify({"name": values.name, "email": values.email, "message": values.message}),
+        })
+        .then(function (response) {
+        console.log("response", response)
+        if(response.status === 200){
+           success = true
+           setValues(initialState)
+           setErrors({})
+        } //else {}
+        })
+        .catch(function (error) {
+         console.log(error);
+         })
         }
         e.preventDefault()
     }
