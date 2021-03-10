@@ -1,28 +1,29 @@
 import React, { useContext } from "react"
+import { useSize } from "../Size"
 import { LocaleContext } from "../../context/LocaleContext"
-import { SpanCV } from "../../theme/SmallComp"
+import { ASimple, SpanCV } from "../../theme/SmallComp"
 import { Emoji } from "../Emoji"
-import { HeaderContainer } from "../../theme/Containers"
+import { Icon } from "../Icons"
+import { violet } from "../../theme/variables"
+//import { HeaderContainer } from "../../theme/Containers"
 import { HeaderLink, HeadDiv0, HeadDiv1} from "../../theme/HeaderStyle"
 
 export const SmHeader = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
-	
+    const widthS = useSize()
 		return (
 			<>
-			<HeaderContainer>
 			<HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
-			
-			
-</HeaderContainer>
+			{ widthS < 400 
+				? null
+				: <><HeaderLink  to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
+			<HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink></>
+            }
+            <HeadDiv1 marginBottom={.4}> 
+            <ASimple target="_blank" href="" >
+			<Icon name="hamburger"  color={violet}/>
+			</ASimple>
+			</HeadDiv1>
 			</>
 			)
 }
-
-// <HeaderLink  to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
-// <HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink>			
-// <HeadDiv1 onClick={updateLocale.bind(null, "fr")}><Emoji label="" symbol="🇫🇷" /></HeadDiv1>
-// <HeadDiv1 onClick={updateLocale.bind(null, "en")}><Emoji label="" symbol="🇬🇧" /></HeadDiv1>
-// <HeadDiv1 onClick={updateLocale.bind(null, "sp")}><Emoji label="" symbol="🇪🇸" /></HeadDiv1>
-// <HeadDiv1 onClick={updateLocale.bind(null, "pt")}><Emoji label="" symbol="🇵🇹" /></HeadDiv1>
-// 

@@ -30,4 +30,17 @@ export const HeadDiv0 = styled.div`
 export const HeadDiv1 = styled.div`
   background: transparent;
   margin: .4em;
+  margin-bottom: .7em;
+ ${(props) => props.marginBottom && `
+    margin-bottom: ${props.marginBottom}em;
+    `
+  }
+`
+
+export const HeadDiv2 = styled.div`
+  background: transparent;
+  margin: .4em;
+  margin-bottom: .7em;
+  padding-bottom: .2em;
+
 `

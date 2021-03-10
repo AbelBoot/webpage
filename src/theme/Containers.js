@@ -1,7 +1,6 @@
 import styled  from "styled-components"
 import { css }  from "styled-components"
 import { pink } from "./variables"
-import { media } from "./media"
 
 export const Container = styled.div`
   padding-left: 30px;
@@ -9,18 +8,14 @@ export const Container = styled.div`
   padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-    ${media.phone`
 
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-
-
-    `
-  }
 `
 
+  //   ${media.phone`
 
+  // padding-left: 10px;
+  // padding-right: 10px;
+  // padding-top: 10px;`}
 
 export const HeaderContainer = styled.div`
     display:flex;

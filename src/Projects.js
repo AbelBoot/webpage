@@ -6,7 +6,8 @@ import { PDrones } from "./components/PDrones"
 import { PCoding } from "./components/PCoding"
 import Tabs from "./components/Tabs"
 import { ProjectContainer} from "./theme/Containers"
-
+//        	<Tabs maxWidth="30px" dir={window.innerWidth < 767 
+//				? "row" : "column" }>
 //for chemistry tab <Tabs alignItems="center">
 export const Projects = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)

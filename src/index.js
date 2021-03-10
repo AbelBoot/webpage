@@ -7,7 +7,6 @@ import Contact from './Contact'
 import { Container } from "./theme/Containers"
 import { Projects } from './Projects'
 import { Header } from "./components/Header"
-import { SmHeader } from "./components/Small/SmHeader"
 import { GlobalStyle } from "./theme/GlobalStyle"
 
 ReactDOM.render(
@@ -15,9 +14,7 @@ ReactDOM.render(
   	<GlobalStyle />
   	<HashRouter>
   	<LocaleProvider>
-    {window.innerWidth < 767 
-        ? <SmHeader /> : <Header />} 
-    
+    <Header />
     <Container>
 		<Route exact path="/" component={Projects}></Route>
     <Route exact path="/contact" component={Contact}></Route>
@@ -28,3 +25,8 @@ ReactDOM.render(
   document.getElementById('root')
 )
 
+// const sizes = {
+//   phone: 390,
+//   desktop: 768,
+//   big: 1280
+// }

@@ -71,13 +71,17 @@ const reactSpanAnimation = keyframes`
 `
 
 export const SpanCV = styled.span`
-  display: inline;
+  display: flex;
+  wrap: no-wrap;
   margin-left: .2em;
   color: white;
   background-color: ${violet};
   border-radius: 5px 20px 5px;
   padding: 6px 10px 6px 10px; 
 `
+  // ${(props) => props.minWidth && css `
+  //   min-width: ${props.minWidth}px;
+  // ` }
 
 export const SpanCV0 = styled.span`
   
@@ -219,6 +223,49 @@ export const DivArrow = styled.div`
     border-radius: 1px;
     background-color: ${pink};
   }
+
+  &:after DivArrow {
+    margin-bottom: 3em;
+  }
+  ${(props) => props.textAlign && `
+    text-align: ${props.textAlign};
+    `
+  }
+  ${(props) => props.lineHeight && `
+    line-height: ${props.lineHeight}em;
+    `
+  }
+ `
+
+ export const ASimple = styled.a`
+  color: ${violet};
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  position: relative;
+
+  padding: 6px 10px 1px 10px;
+  ${(props) => props.paddingTop && `
+    padding-top: ${props.paddingTop}px;
+    `
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 20%;
+    min-width: 100%;
+    
+      ${(props) => props.backgroundColor && `
+    background-color: ${props.backgroundColor};
+     `
+    }
+    z-index: -1;
+    
+  }
+
+
 
   &:after DivArrow {
     margin-bottom: 3em;
