@@ -16,13 +16,13 @@ const url = `${process.env.REACT_APP_YOUTUBE_URL}&key=${process.env.REACT_APP_AP
       .then(resp => resp.json())
       .then(resp => {
         const vidId = resp.items//.snippet.resourceId.videoId
-         console.log("againnnnn")
-         console.log("vidId type0", vidId)
+         //console.log("againnnnn")
+         //console.log("vidId type0", vidId)
         let prom = Promise.resolve(vidId)
-        console.log("prom", prom)
+        //console.log("prom", prom)
         Promise.all([prom]).then(
         	el => {
-        	  console.log("ellll", el)
+        	  //console.log("ellll", el)
         setYtAPi(el)
         setSpinner0(false)
             }
@@ -33,9 +33,9 @@ const url = `${process.env.REACT_APP_YOUTUBE_URL}&key=${process.env.REACT_APP_AP
         
       })
       .catch(err => console.log("err YT", err))
-     console.log("ytVidAPI in effect", ytVidAPI)
+     //console.log("ytVidAPI in effect", ytVidAPI)
 	}, [])
-	console.log("ytVidAPI.....", ytVidAPI[0])
+	//console.log("ytVidAPI.....", ytVidAPI[0])
 		
 const Spinner = (ind) => {
 	return (
@@ -52,7 +52,7 @@ const Spinner = (ind) => {
 		)
 }
 const Vid = (vid) => {
-	console.log("viddd", vid)
+	//console.log("viddd", vid)
 	return (
 		
 		<VC0>
@@ -73,7 +73,7 @@ const Vid = (vid) => {
     //from the ternay operator!! why?
     let arrEmpt = [<Spinner />, <Spinner />, <Spinner />, <Spinner />, <Spinner />, <Spinner />, <Spinner />, <Spinner />]
     {ytVidAPI.map((el, ind) => {
-    	console.log("typee", typeof el)
+    	//console.log("typee", typeof el)
         for (let i = 0; i < 8; i++){
             let tempo = el[i]
             const vid = tempo.snippet.resourceId.videoId

@@ -16,7 +16,7 @@ export const WCDIV1_02 = styled.div`
 export const WCDIV1_03 = styled.div`
 `
 export const WCDIV1_04 = styled.div`
+flex-basis: 100%;
 `
-export const WCDIV1_05 = styled.div`
-`
+
 

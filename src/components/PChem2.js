@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { LocaleContext } from "../context/LocaleContext"
+import { LocaleContext } from "../custom/LocaleContext"
 import { Image, H5, A } from "../theme/SmallComp"
 import { Icon } from "./Icons"
 import { violet } from "../theme/variables"

@@ -1,7 +1,7 @@
 import React from "react"
 import { Tab } from "./Tab"
 //import { TabContainer, ListTab, LiActive, 
-import { OlTabs } from "../theme/SmallComp"
+import { OlTabs, H5 } from "../theme/SmallComp"
 //import { Container, Relative, Flex  } from "../theme/Containers"
 
 
@@ -16,16 +16,16 @@ export default class Tabs extends React.Component {
 	render(){
 		const {children} = this.props
 		const {activeTab} = this.state
-
+//flexBasis and flexDirection are coming 
+// from Tabs and allow horizontal tabs 
+//on small screens.
 		return (
 			<>
 			<OlTabs 				
-				
-				flexBasis={this.props.basis}
-				flexDirection={this.props.dir}>
-
+				flexBasis={this.props.flexBasis}
+				flexDirection={this.props.flexDirection}
+				>
 				{children.map((tab) => {
-				console.log("props olTabs", this.props)
 					return (
 						<Tab
 							key={tab.props.label}
@@ -40,7 +40,10 @@ export default class Tabs extends React.Component {
 				{children.map((content) => {
 					if (content.props.label === activeTab){
 						return (
-							<h4>{content}</h4>
+							<H5 
+							  marginTop=".1"
+							  fontSize="1"
+							>{content}</H5>
 						)
 					}
 				})}

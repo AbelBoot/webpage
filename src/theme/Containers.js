@@ -33,20 +33,21 @@ export const WCContainer = styled.div`
 
 
 `
-
+//this flex wrap allows for horizontal tabs
+// (or no)
 export const ProjectContainer = styled.div`
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-
+  ${(props) => props.flexWrap && `
+     flex-wrap: ${props.flexWrap};
+  `};
+  
 `
-//flex-wrap: wrap;
-  //width: 100%;
+
 export const PDContainer = styled.div`
 
 `
-
-
 
 export const PCoContainer = styled.div`
     display: flex;
@@ -108,7 +109,7 @@ export const ContactContainer = styled.div`
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  padding: 0 1em 1em 1em;
 `
 
 

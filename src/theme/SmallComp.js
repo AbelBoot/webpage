@@ -18,6 +18,10 @@ ${(props) => props.fontStyle && `
     font-style: ${props.fontStyle};
     `
   }
+${(props) => props.fontSize && `
+    font-size: ${props.fontSize}em;
+    `
+  }
 ${(props) => props.fontFamily && `
     font-family: ${props.fontFamily};
     `
@@ -42,11 +46,25 @@ ${(props) => props.lineHeight && `
 
 export const H4 = styled.h4`
 ${textStyles};
-font-size: .6em;
+font-size: .9em;
 ${(props) => props.marginTop && `
     margin-top: ${props.marginTop}em;
     `
-  }
+}
+${(props) => props.marginBottom && `
+    margin-bottom: ${props.marginBottom}em;
+    `
+}
+${(props) => props.color && `
+    color: ${props.color};
+    `
+}
+`
+
+export const H2 = styled.h2`
+    ${textStyles}
+    font-size: 1.5em;
+    margin: 0;
 `
 
 export const H1 = styled.div`
@@ -83,10 +101,8 @@ export const SpanCV = styled.span`
   //   min-width: ${props.minWidth}px;
   // ` }
 
-export const SpanCV0 = styled.span`
-  
+export const SpanCVInline = styled.span`
   margin-left: .2em;
-  
   color: white;
   background-color: ${violet};
   border-radius: 5px 20px 5px;
@@ -100,11 +116,11 @@ const reactAnimation = keyframes`
   100%{ opacity: 1;}
 `
 
-
+//padding: 6px 10px 6px 10px;
 export const SpanTab = styled.span`
   display: inline;
   border-radius: 5px 20px 5px;
-  padding: 6px 10px 6px 10px;
+  
 `
 
 export const TabContainer = styled.div`
@@ -112,6 +128,9 @@ export const TabContainer = styled.div`
   
 `
 
+//flexBasis and flexDirection are coming 
+// from Tabs and allow horizontal tabs 
+//on small screens.
 export const OlTabs = styled.ol`  
   display: flex;
   ${(props) => props.maxWidth && css `
@@ -120,19 +139,19 @@ export const OlTabs = styled.ol`
   ${({justifyContent}) => justifyContent && css`
     justify-content: ${justifyContent};
   `};
+
   ${({flexDirection}) => flexDirection && css`
     flex-direction: ${flexDirection};
   `};
   ${({flexBasis}) => flexBasis && css`
-    flex-basis: ${flexBasis};
+    flex-basis: ${flexBasis}%;
   `};
   ${({alignItems}) => alignItems && css`
     align-items: ${alignItems};
   `};
   list-style: none;
   margin: 1px;
-  padding: 0.5rem 0.75rem;
-  
+  padding: 0.2rem 0.2rem;
 `
 
 export const ListTab = styled.li`

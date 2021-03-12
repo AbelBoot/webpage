@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
-import { useSize } from "./Size"
-import { LocaleContext } from "../context/LocaleContext"
+import { useSize } from "../custom/Size"
+import { LocaleContext } from "../custom/LocaleContext"
 import { SpanCV } from "../theme/SmallComp"
 import { SmHeader } from "./Small/SmHeader"
 import { BgHeader } from "./Small/BgHeader"

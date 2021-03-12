@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import LocaleProvider from "./context/LocaleContext"
+import LocaleProvider from "./custom/LocaleContext"
 import { HashRouter, Route } from "react-router-dom"
 import './index.css'
 import Contact from './Contact'
@@ -19,7 +19,7 @@ ReactDOM.render(
 		<Route exact path="/" component={Projects}></Route>
     <Route exact path="/contact" component={Contact}></Route>
     </Container>
-	</LocaleProvider>
+	  </LocaleProvider>
     </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')

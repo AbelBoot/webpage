@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from "react"
-import { LocaleContext } from "../context/LocaleContext"
+import { LocaleContext } from "../custom/LocaleContext"
 import { BigDivForm, DivForm, DivFormMess, InputForm, LabelForm, TextAreaForm, ButtonForm, PForm } from "../theme/FormStyle"
 import { FormContainer } from "../theme/Containers"
 import {useValidation} from "./FormValidation"

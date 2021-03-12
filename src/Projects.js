@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
-import { LocaleContext } from "./context/LocaleContext"
+import { useSize } from "./custom/Size"
+import { LocaleContext } from "./custom/LocaleContext"
 import { Welcome } from "./components/Welcome"
 import { PChem } from "./components/PChem"
 import { PDrones } from "./components/PDrones"
@@ -9,15 +10,43 @@ import { ProjectContainer} from "./theme/Containers"
 //        	<Tabs maxWidth="30px" dir={window.innerWidth < 767 
 //				? "row" : "column" }>
 //for chemistry tab <Tabs alignItems="center">
+    //            	flexBasis={widthS < 767
+				//    ? "100"
+				//    : null }
+				// flexWrap={widthS < 767
+				//    ? "wrap"
+				//    : null }
+
+
+				// flexBasis={widthS < 500 
+				//    ? "100" 
+				//    : null }
+
 export const Projects = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
+	const widthS = useSize()
+//Tabs also responsive with 
+//<Tabs maxWidth="30px" dir={window.innerWidth < 767 
+//? "row" : "column" }>
 		return (
 			<>
             <Welcome />
-			<ProjectContainer>
+			<ProjectContainer
+        	    flexWrap={widthS < 600 
+				   ? "wrap" 
+				   : null }
+			>
+
         {locale === "en" && 
-        	<Tabs maxWidth="30px" dir={window.innerWidth < 767 
-				? "row" : "column" }>
+        	<Tabs 
+        	    maxWidth="30px" 
+        	    flexDirection={widthS < 600 
+				   ? "row" 
+				   : "column" }
+				flexBasis={widthS < 600 
+				   ? "100" 
+				   : null }
+				>
                 <div label="Drones">
                   <PDrones />
 				</div>
@@ -30,8 +59,13 @@ export const Projects = () => {
 			</ Tabs>
         }
 		{locale === "fr" && 
-			<Tabs maxWidth="30px" dir={window.innerWidth < 767 
-				? "row" : "column" }>
+			<Tabs maxWidth="30px"         	    flexDirection={widthS < 600 
+				   ? "row" 
+				   : "column" }
+				flexBasis={widthS < 600 
+				   ? "100" 
+				   : null }
+				>
                 <div label="Drones">
                   <PDrones />
 				</div>
@@ -45,8 +79,13 @@ export const Projects = () => {
     	}
     			
 		{locale === "sp" && 
-			<Tabs  maxWidth="30px" dir={window.innerWidth < 767 
-				? "row" : "column" }>
+			<Tabs  maxWidth="30px"         	    flexDirection={widthS < 600 
+				   ? "row" 
+				   : "column" }
+				flexBasis={widthS < 600 
+				   ? "100" 
+				   : null }
+				>
                 <div label="Drones">
                   <PDrones />
 				</div>
@@ -59,8 +98,15 @@ export const Projects = () => {
 			</ Tabs>
  	    }	
 		{locale === "pt" && 
-			<Tabs  maxWidth="30px" dir={window.innerWidth < 767 
-				? "row" : "column" }>
+			<Tabs  maxWidth="30px" 
+			       flexDirection={widthS < 600 
+				   ? "row" 
+				   : "column" }
+				flexBasis={widthS < 600 
+				   ? "100" 
+				    : null }
+
+				>
                 <div label="Drones">
                   <PDrones />
 				</div>

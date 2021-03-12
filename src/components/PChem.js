@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { LocaleContext } from "../context/LocaleContext"
+import { LocaleContext } from "../custom/LocaleContext"
 import { H5, A } from "../theme/SmallComp"
 import { PChem1 } from "./PChem1"
 import { PChem2 } from "./PChem2"
@@ -75,7 +75,8 @@ export const PChem = () => {
 			</PCDIVCONT>
 
         {locale === "en" && 
-        	<Tabs alignItems="center">
+        	<Tabs 
+        	alignItems="center">
 				<div label="Benzodiazepines and Ring Openings">
 				  <PChem1 />
 				</div>

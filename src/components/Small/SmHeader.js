@@ -1,6 +1,6 @@
 import React, { useContext } from "react"
-import { useSize } from "../Size"
-import { LocaleContext } from "../../context/LocaleContext"
+import { useSize } from "../../custom/Size"
+//import { LocaleContext } from "../../context/LocaleContext"
 import { ASimple, SpanCV } from "../../theme/SmallComp"
 import { Emoji } from "../Emoji"
 import { Icon } from "../Icons"
@@ -9,7 +9,7 @@ import { violet } from "../../theme/variables"
 import { HeaderLink, HeadDiv0, HeadDiv1} from "../../theme/HeaderStyle"
 
 export const SmHeader = () => {
-	const { locale, updateLocale } = useContext(LocaleContext)
+	//const { locale, updateLocale } = useContext(LocaleContext)
     const widthS = useSize()
 		return (
 			<>

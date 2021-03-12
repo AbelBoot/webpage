@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react"
-import { LocaleContext } from "../context/LocaleContext"
+import { LocaleContext } from "../custom/LocaleContext"
 
 let success = false
 let errors = {}

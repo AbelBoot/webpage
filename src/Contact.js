@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { LocaleContext } from "./context/LocaleContext"
+import { LocaleContext } from "./custom/LocaleContext"
 import { Form } from "./components/Form"
 //import { ContactText1, ContactText2 } from "./components/Text"
 import { ContactContainer } from "./theme/Containers"
 import { CONTACTDIV0, CONTACTDIV1, CONTACTDIV2, CONTACTDIV3_00, CONTACTDIV3_01, CONTACTDIV3_02, CONTACTDIV3_03, CONTACTDIV3_04, CONTACTDIV3_05, CONTACTDIV3_06 } from "./theme/ContactStyle"
-import { A, SpanCV } from "./theme/SmallComp"
+import { H2, A, SpanCV, SpanCVInline } from "./theme/SmallComp"
 import { violet } from "./theme/variables"
 import { Icon } from "./components/Icons"
 
@@ -13,10 +13,10 @@ function Contact() {
   return (
     <>
 
-    {locale === "en" && <h2>Contacts</h2>}
-    {locale === "fr" && <h2>Contacts</h2>}
-    {locale === "sp" && <h2>Contactos</h2>}
-    {locale === "pt" && <h2>Contactos</h2>}
+    {locale === "en" && <H2>Contacts</H2>}
+    {locale === "fr" && <H2>Contacts</H2>}
+    {locale === "sp" && <H2>Contactos</H2>}
+    {locale === "pt" && <H2>Contactos</H2>}
     
        <ContactContainer>
         <CONTACTDIV0>
@@ -60,19 +60,19 @@ function Contact() {
         {locale === "en" && 
           <A target="_blank" href="Resume.pdf">
           <Icon name="resume" color={violet}/>
-          <SpanCV>CV</SpanCV></A>}
+          <SpanCVInline>CV</SpanCVInline></A>}
         {locale === "fr" &&
             <A target="_blank" href="Resume.pdf">
             <Icon name="resume" color={violet}/>
-            <SpanCV>Resume</SpanCV></A>}      
+            <SpanCVInline>Resume</SpanCVInline></A>}      
         {locale === "sp" && 
             <A target="_blank" href="Resume.pdf">
             <Icon name="resume" color={violet}/>
-            <SpanCV>Curriculum</SpanCV></A>}   
+            <SpanCVInline>Curriculum</SpanCVInline></A>}   
         {locale === "pt" && 
             <A target="_blank" href="Resume.pdf">
             <Icon name="resume" color={violet}/>
-            <SpanCV>Curriculum</SpanCV></A>}
+            <SpanCVInline>Curriculum</SpanCVInline></A>}
     </CONTACTDIV3_06>
             </CONTACTDIV3_00>
 
