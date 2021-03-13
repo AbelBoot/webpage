@@ -1,6 +1,6 @@
 import styled  from "styled-components"
 import { css }  from "styled-components"
-import { pink } from "./variables"
+import { pink, violet } from "./variables"
 
 export const Container = styled.div`
   padding-left: 30px;
@@ -10,14 +10,39 @@ export const Container = styled.div`
   flex-wrap: wrap;
 
 `
+  // ${({burger}) => !burger && css`
+  //   box-shadow: none;
+  // `};
+  //box-shadow: 0px 4px 15px 0px ${pink};
+export const HamburgerContainer = styled.div`
 
-  //   ${media.phone`
+  display:flex;
+  justify-content: center; 
+  width: 100%;
+  background: transparent;
+  ${({justify}) => justify && css`
+    justify-content: ${justify};
+  `};
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  align-items: center;
+  
+  transform: translateX(0);
 
-  // padding-left: 10px;
-  // padding-right: 10px;
-  // padding-top: 10px;`}
+  
+`
+export const HamburgerMenuContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  ${({burger}) => burger && css`
+    display: none;
+  `};
+`
+
+//transform: translateX(200%);
 
 export const HeaderContainer = styled.div`
+
     display:flex;
   justify-content: flex-end; 
   width: 100%;
@@ -27,6 +52,7 @@ export const HeaderContainer = styled.div`
   `};
   align-items: flex-end;
   box-shadow: 0px 4px 15px 0px ${pink};
+
 `
 
 export const WCContainer = styled.div`

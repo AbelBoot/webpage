@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useState, useContext } from "react"
 import { useSize } from "../custom/Size"
 import { LocaleContext } from "../custom/LocaleContext"
 import { SpanCV } from "../theme/SmallComp"
@@ -12,6 +12,7 @@ import { HeaderLink, HeadDiv0, HeadDiv1} from "../theme/HeaderStyle"
 export const Header = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	let { errors, success  } = useValidation()
+	const [burger, setBurger] = useState(true)
     const widthS = useSize()
     const clearForm = () => {
 console.log("clearing form")
@@ -21,8 +22,8 @@ console.log("clearing form")
     
 		return (
 			<>
-			<HeaderContainer>
-			{widthS < 520 ? <SmHeader /> : <BgHeader />}
+			<HeaderContainer burger={burger} setBurger={setBurger}>
+			{widthS < 520 ? <SmHeader burger={burger} setBurger={setBurger}/> : <BgHeader burger={burger} setBurger={setBurger}/>}
 			</HeaderContainer>
 			</>
 			)

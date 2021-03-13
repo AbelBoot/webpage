@@ -7,12 +7,12 @@ import { Icon } from "../Icons"
 import { violet } from "../../theme/variables"
 import { HeaderLink, HeadDiv0, HeadDiv1, HeadDiv2 } from "../../theme/HeaderStyle"
 
-export const BgHeader = () => {
+export const BgHeader = ({burger, setBurger}) => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
 		return (
 			<>
-			{widthS < 600 
+			{widthS < 600 && burger
                 ?  <HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
 				:  <HeadDiv0><SpanCV>Abel Locati</SpanCV></HeadDiv0>
 			}
