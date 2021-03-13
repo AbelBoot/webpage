@@ -5,7 +5,7 @@ import { HamburgerMenuContainer } from "../../theme/Containers"
 import { A, SpanCV } from "../../theme/SmallComp"
 import { Emoji } from "../Emoji"
 import { violet } from "../../theme/variables"
-import { HeaderLink, HeadDiv0, HeadDiv1, HeadDiv2 } from "../../theme/HeaderStyle"
+import { HeadDivLinkHamburger, HeaderLinkHamburger, HeadDiv0, HeadDiv1Hamburger, HeadDivEmojiHamburger, HeadDiv2Hamburger } from "../../theme/HeaderStyle"
 
 export const Hamburger = ({burger}) => {
 	const { locale, updateLocale } = useContext(LocaleContext)
@@ -14,12 +14,16 @@ export const Hamburger = ({burger}) => {
 	return (
 		<>
         <HamburgerMenuContainer burger={burger}>
-           <HeaderLink to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
-	       <HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink>			
-           <HeadDiv2 onClick={updateLocale.bind(null, "fr")}><Emoji label="" symbol="🇫🇷" /></HeadDiv2>
-	       <HeadDiv2 onClick={updateLocale.bind(null, "en")}><Emoji label="" symbol="🇬🇧" /></HeadDiv2>
-	       <HeadDiv2 onClick={updateLocale.bind(null, "sp")}><Emoji label="" symbol="🇪🇸" /></HeadDiv2>
-	       <HeadDiv2 onClick={updateLocale.bind(null, "pt")} style={{paddingRight: "1em"}}><Emoji label="" symbol="🇵🇹" /></HeadDiv2>
+           <HeadDivLinkHamburger>
+           <HeaderLinkHamburger to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1Hamburger> Projects </HeadDiv1Hamburger></HeaderLinkHamburger>
+	       <HeaderLinkHamburger to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1Hamburger>  Contact </HeadDiv1Hamburger></HeaderLinkHamburger>			
+	       </HeadDivLinkHamburger>
+	       <HeadDivEmojiHamburger>
+           <HeadDiv2Hamburger onClick={updateLocale.bind(null, "fr")}><Emoji label="" symbol="🇫🇷" /></HeadDiv2Hamburger>
+	       <HeadDiv2Hamburger onClick={updateLocale.bind(null, "en")}><Emoji label="" symbol="🇬🇧" /></HeadDiv2Hamburger>
+	       <HeadDiv2Hamburger onClick={updateLocale.bind(null, "sp")}><Emoji label="" symbol="🇪🇸" /></HeadDiv2Hamburger>
+	       <HeadDiv2Hamburger onClick={updateLocale.bind(null, "pt")} style={{paddingRight: "1em"}}><Emoji label="" symbol="🇵🇹" /></HeadDiv2Hamburger>
+	       </HeadDivEmojiHamburger >
 	    </HamburgerMenuContainer>
 	    </>
 		)

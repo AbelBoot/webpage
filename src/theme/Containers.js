@@ -25,7 +25,7 @@ export const HamburgerContainer = styled.div`
   `};
   flex-wrap: wrap;
   flex-basis: 100%;
-  align-items: flex-start;
+  align-items: center;
   
   transform: translateX(0);
 
@@ -33,6 +33,7 @@ export const HamburgerContainer = styled.div`
 `
 export const HamburgerMenuContainer = styled.div`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   ${({burger}) => burger && css`
     display: none;
@@ -50,7 +51,7 @@ export const HeaderContainer = styled.div`
   ${({justify}) => justify && css`
     justify-content: ${justify};
   `};
-  align-items: flex-end;
+  align-items: center;
   box-shadow: 0px 4px 15px 0px ${pink};
 
 `
