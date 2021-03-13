@@ -25,7 +25,7 @@ export const HamburgerContainer = styled.div`
   `};
   flex-wrap: wrap;
   flex-basis: 100%;
-  align-items: center;
+  align-items: flex-start;
   
   transform: translateX(0);
 
