@@ -42,6 +42,10 @@ ${(props) => props.lineHeight && `
     line-height: ${props.lineHeight};
     `
   }
+${(props) => props.color && `
+    color: ${props.color};
+    `
+}
 `
 
 export const H4 = styled.h4`
@@ -64,7 +68,7 @@ ${(props) => props.color && `
 export const H2 = styled.h2`
     ${textStyles}
     font-size: 1.5em;
-    margin: 0;
+    margin-top: 1em;
 `
 
 export const H1 = styled.div`

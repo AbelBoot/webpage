@@ -2,12 +2,15 @@ import React, { useState, useContext } from "react"
 import { useSize } from "../../custom/Size"
 import { Hamburger } from "./Hamburger"
 import { HamburgerContainer } from "../../theme/Containers"
-import { ASimple, SpanCV } from "../../theme/SmallComp"
+import { ASimple, H5 } from "../../theme/SmallComp"
 import { Emoji } from "../Emoji"
 import { Icon } from "../Icons"
 import { violet } from "../../theme/variables"
 import { HeaderLink, HeadDiv0, HeadDiv1, HeadDivIconHamburger } from "../../theme/HeaderStyle"
 
+			// { widthS < 400 && burger 
+			// 	? <HeadDiv0><H5>Abel Locati</H5></HeadDiv0>
+			// 	:  null }
 export const SmHeader = ({burger, setBurger}) => {
     const widthS = useSize()
     const handleClick = () => {
@@ -15,8 +18,9 @@ export const SmHeader = ({burger, setBurger}) => {
     }
 		return (
 			<>
-			{ widthS < 400 || burger
-				? <HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
+
+			{ widthS < 400 
+				? <HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
 				:  null }
             <HeadDiv1 marginBottom={.4}> 
             <HamburgerContainer burger={burger} onClick={handleClick}> 

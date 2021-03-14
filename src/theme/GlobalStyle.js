@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
 	body {
     font-family: 'Crimson Text';
     font-size: 1.2em;
+
   }
 `
 

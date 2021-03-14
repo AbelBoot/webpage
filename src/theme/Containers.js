@@ -9,6 +9,8 @@ import { pink, violet } from "./variables"
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+      padding-left: .5em;
+    padding-right: .5em;
 `
   // ${({burger}) => !burger && css`
   //   box-shadow: none;

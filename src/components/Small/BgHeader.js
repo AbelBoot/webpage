@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import { useSize } from "../../custom/Size"
 import { LocaleContext } from "../../custom/LocaleContext"
-import { A, SpanCV } from "../../theme/SmallComp"
+import { A, SpanCV, H5 } from "../../theme/SmallComp"
 import { Emoji } from "../Emoji"
 import { Icon } from "../Icons"
 import { violet } from "../../theme/variables"
@@ -10,10 +10,11 @@ import { HeaderLink, HeadDiv0, HeadDiv1, HeadDiv2 } from "../../theme/HeaderStyl
 export const BgHeader = ({burger, setBurger}) => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
+	//&& !burger
 		return (
 			<>
-			{widthS < 600 && burger
-                ?  <HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
+			{widthS < 600 
+                ?  <HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
 				:  <HeadDiv0><SpanCV>Abel Locati</SpanCV></HeadDiv0>
 			}
 			<HeaderLink to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
