@@ -58,15 +58,30 @@ export const PCDIVVERT_2 = styled.div`
 max-width: 50%;
 `
 
+export const PCDIVVERT_1_Sm = styled.div`  
+width: 100%;
+padding-right: ${props => props.paddingRight}vw;
+padding-left: ${props => props.paddingLeft}vw;
+
+`
+export const PCDIVVERT_2_Sm = styled.div`
+width: 100%;
+`
+
+//check if adding this increase 
+//image on movile
 export const PCDIVHORIZ_1 = styled.div`	
+width: 100%;
 `
 export const PCDIVHORIZ_2 = styled.div`  
 `
 
 // below style for the citations
+//check if wrap is messing up 
 export const PCDIVQ = styled.div`
   	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	min-width: 100%;
 	padding-top: 2vh;
 `
