@@ -14,15 +14,16 @@ export const Container = styled.div`
   //   box-shadow: none;
   // `};
   //box-shadow: 0px 4px 15px 0px ${pink};
+  //   ${({justify}) => justify && css`
+  //   justify-content: ${justify};
+  // `};
 export const HamburgerContainer = styled.div`
 
   display:flex;
-  justify-content: center; 
+  justify-content: flex-start; 
   width: 100%;
   background: transparent;
-  ${({justify}) => justify && css`
-    justify-content: ${justify};
-  `};
+
   flex-wrap: wrap;
   flex-basis: 100%;
   align-items: center;
@@ -45,11 +46,14 @@ export const HamburgerMenuContainer = styled.div`
 export const HeaderContainer = styled.div`
 
     display:flex;
-  justify-content: flex-end; 
+  justify-content: center; 
   width: 100%;
   background: transparent;
   ${({justify}) => justify && css`
     justify-content: ${justify};
+  `};
+  ${({burger}) => burger && css`
+    justify-content: flex-end; 
   `};
   align-items: center;
   box-shadow: 0px 4px 15px 0px ${pink};

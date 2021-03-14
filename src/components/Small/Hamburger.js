@@ -15,8 +15,8 @@ export const Hamburger = ({burger}) => {
 		<>
         <HamburgerMenuContainer burger={burger}>
            <HeadDivLinkHamburger>
-           <HeaderLinkHamburger to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1Hamburger> Projects </HeadDiv1Hamburger></HeaderLinkHamburger>
-	       <HeaderLinkHamburger to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1Hamburger>  Contact </HeadDiv1Hamburger></HeaderLinkHamburger>			
+           <HeaderLinkHamburger to="/" style={{textDecoration: "none"}}><HeadDiv1Hamburger> Projects </HeadDiv1Hamburger></HeaderLinkHamburger>
+	       <HeaderLinkHamburger to="/contact" style={{textDecoration: "none"}}><HeadDiv1Hamburger>  Contact </HeadDiv1Hamburger></HeaderLinkHamburger>			
 	       </HeadDivLinkHamburger>
 	       <HeadDivEmojiHamburger>
            <HeadDiv2Hamburger onClick={updateLocale.bind(null, "fr")}><Emoji label="" symbol="🇫🇷" /></HeadDiv2Hamburger>

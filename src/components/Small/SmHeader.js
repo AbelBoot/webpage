@@ -17,23 +17,18 @@ export const SmHeader = ({burger, setBurger}) => {
     const handleClick = () => {
     	setBurger(!burger)
     }
-
 		return (
 			<>
-			{ widthS < 400 || !burger
+			{ widthS < 400 || burger
 				? <HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
-				: <>
-				<HeadDiv0><SpanCV>AL</SpanCV></HeadDiv0>
-				<HeaderLink  to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
-			<HeaderLink to="/contact" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1>  Contact </HeadDiv1></HeaderLink></>
-            }
+				:  null }
             <HeadDiv1 marginBottom={.4}> 
             <HamburgerContainer burger={burger} onClick={handleClick}> 
             { burger
 				? <><HeadDivIconHamburger><Icon name="hamburger" color={violet}/></HeadDivIconHamburger></>
-				: <><HeadDivIconHamburger><Icon name="cross" color={violet}/></HeadDivIconHamburger></>
+				: <><HeadDivIconHamburger flexBasis={"100"} ><Icon name="cross" width={"10"} color={violet}/></HeadDivIconHamburger></>
 		    }
-            			<Hamburger 
+            <Hamburger 
 			  burger={burger} 
               setBurger={setBurger} 
               	/>
