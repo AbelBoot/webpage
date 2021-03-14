@@ -40,11 +40,8 @@ export const HeadDiv1 = styled.div`
 export const HeadDiv2 = styled.div`
   background: transparent;
   margin: .4em;
-  margin-bottom: .7em;
-  padding-bottom: .2em;
-
 `
-//justify-content: flex-end;
+
 export const HeadDivLinkHamburger = styled(Link)`
   display: flex;
   justify-content: center;
@@ -61,7 +58,7 @@ display: flex;
 justify-content: flex-end;
 
 `
-//align-items: flex-end;
+
 export const HeaderLinkHamburger = styled(Link)`
   color: ${violet};
   &:hover {
@@ -70,7 +67,6 @@ export const HeaderLinkHamburger = styled(Link)`
   font-weight: bold;
   font-size: 1.3em;
   flex-basis: 40%;
-  
 `
 
 export const HeaderDivHamburger = styled.div`
@@ -92,14 +88,12 @@ export const HeadDiv1Hamburger = styled.div`
   display: flex;
   justify-content: center;
   background: transparent;
-  
  ${(props) => props.marginBottom && `
     margin-bottom: ${props.marginBottom}em;
     `
   }
 `
 
-//margin-bottom: .7em;
 export const HeadDivEmojiHamburger = styled.div`
   display: flex;
   justify-content: space-between;
