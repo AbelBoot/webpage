@@ -177,8 +177,6 @@ export const ListTab = styled.li`
   font-weight: bold;
   padding: 6px 10px 6px 10px;
   margin: .8em;
-  
-  
   &:hover {
     cursor: pointer;
   }

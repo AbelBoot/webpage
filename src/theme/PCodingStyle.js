@@ -12,12 +12,14 @@ export const PCODIV1 = styled.div`
 export const PCODIV2_00 = styled.div`
   	display: flex;
 	flex-direction: column;
+
     
 `
 
 export const PCODIV2_01 = styled.div`
   	display: flex;
 	flex-direction: row;
+
 	padding-bottom: 3vh;
 	padding-top: 3vh;
 `
@@ -35,6 +37,7 @@ export const PCODIV2_01_4 = styled.div`
 export const PCODIV2_02 = styled.div`
   	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	padding-bottom: 3vh;
 `
 export const PCODIV2_02_1 = styled.div`
@@ -51,6 +54,7 @@ export const PCODIV2_02_4 = styled.div`
 export const PCODIV2_03 = styled.div`
   	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	padding-bottom: 3vh;
 `
 export const PCODIV2_03_1 = styled.div`

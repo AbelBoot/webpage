@@ -2,13 +2,13 @@ import styled  from "styled-components"
 import { css }  from "styled-components"
 import { pink, violet } from "./variables"
 
+  // padding-left: 30px;
+  // padding-right: 30px;
+  // padding-top: 20px;
+
 export const Container = styled.div`
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
-
 `
   // ${({burger}) => !burger && css`
   //   box-shadow: none;
@@ -17,6 +17,8 @@ export const Container = styled.div`
   //   ${({justify}) => justify && css`
   //   justify-content: ${justify};
   // `};
+  //is this useful??
+  //transform: translateX(0);
 export const HamburgerContainer = styled.div`
 
   display:flex;
@@ -28,7 +30,7 @@ export const HamburgerContainer = styled.div`
   flex-basis: 100%;
   align-items: center;
   
-  transform: translateX(0);
+  
 
   
 `
@@ -56,7 +58,7 @@ export const HeaderContainer = styled.div`
     justify-content: flex-end; 
   `};
   align-items: center;
-  box-shadow: 0px 4px 15px 0px ${pink};
+  box-shadow: 0px 3px 15px 0px ${pink};
 
 `
 
@@ -77,7 +79,6 @@ export const ProjectContainer = styled.div`
 `
 
 export const PDContainer = styled.div`
-
 `
 
 export const PCoContainer = styled.div`
@@ -106,7 +107,7 @@ export const PCContainer = styled.div`
 `
 
 export const ProjectChemistryContainerSub1 = styled.div`
- flex-direction: column;
+flex-direction: column;
 flex-basis: 100%;
   
 `
