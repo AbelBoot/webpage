@@ -10,6 +10,7 @@ export const useSize = () => {
         setWinSize(window.innerWidth, window.innerHeight)
    	  }
       window.addEventListener("resize", observeWinSize)
+      return () => window.removeEventListener("resize", observeWinSize)
    }, [])
    return winSize
 }
