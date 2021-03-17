@@ -88,12 +88,14 @@ export const HeadDiv1Hamburger = styled.div`
   display: flex;
   justify-content: center;
   background: transparent;
+
  ${(props) => props.marginBottom && `
     margin-bottom: ${props.marginBottom}em;
     `
   }
 `
 
+//margin-bottom: .7em;
 export const HeadDivEmojiHamburger = styled.div`
   display: flex;
   justify-content: space-between;

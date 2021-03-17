@@ -1,4 +1,4 @@
-import React, { useContext } from "react"
+import React, { useEffect, useContext } from "react"
 import { useSize } from "./custom/Size"
 import { LocaleContext } from "./custom/LocaleContext"
 import { Welcome } from "./components/Welcome"
@@ -28,99 +28,56 @@ export const Projects = () => {
 //Tabs also responsive with 
 //<Tabs maxWidth="30px" dir={window.innerWidth < 767 
 //? "row" : "column" }>
+    let projectContainerProps = {
+    	flexWrap: null
+    }
+    let mainTabProps = {
+    	maxWidth: "30px",
+    	flexDirection: "column",
+    	flexBasis: null
+    }
+    let chemistryTabProps = {
+      label: "Chemistry"
+    }
+   // useEffect(() => {
+
+
+    if (widthS < 600){
+    	projectContainerProps.flexWrap = "wrap"
+    }
+
+    if (widthS < 600){
+    	mainTabProps.flexDirection = "row"
+    	mainTabProps.flexBasis = "100"
+    }
+//useEffect(() => {
+    if (locale === "fr" ){
+      chemistryTabProps.label = "Chimie"
+    }
+    if (locale === "sp" || locale === "pt"){
+      chemistryTabProps.label = "Química"
+    }
+//    }, [locale])
+
 		return (
 			<>
             <Welcome />
 			<ProjectContainer
-        	    flexWrap={widthS < 600 
-				   ? "wrap" 
-				   : null }
+        	    {...projectContainerProps}
 			>
-
-        {locale === "en" && 
-        	<Tabs 
-        	    maxWidth="30px" 
-        	    flexDirection={widthS < 600 
-				   ? "row" 
-				   : "column" }
-				flexBasis={widthS < 600 
-				   ? "100" 
-				   : null }
-				>
+        	<Tabs {...mainTabProps}>
                 <div label="Drones">
                   <PDrones />
 				</div>
 				<div label="Coding">
                   <PCoding />
 				</div>
-				<div label="Chemistry">
+				<div {...chemistryTabProps}>
 		          <PChem />
 				</div>
 			</ Tabs>
-        }
-		{locale === "fr" && 
-			<Tabs maxWidth="30px"         	    flexDirection={widthS < 600 
-				   ? "row" 
-				   : "column" }
-				flexBasis={widthS < 600 
-				   ? "100" 
-				   : null }
-				>
-                <div label="Drones">
-                  <PDrones />
-				</div>
-				<div label="Coding">
-                  <PCoding />
-				</div>
-				<div label="Chimie">
-		          <PChem />
-				</div>
-			</ Tabs>
-    	}
-    			
-		{locale === "sp" && 
-			<Tabs  maxWidth="30px"         	    flexDirection={widthS < 600 
-				   ? "row" 
-				   : "column" }
-				flexBasis={widthS < 600 
-				   ? "100" 
-				   : null }
-				>
-                <div label="Drones">
-                  <PDrones />
-				</div>
-				<div label="Coding">
-                  <PCoding />
-				</div>
-				<div label="Química">
-		          <PChem />
-				</div>
-			</ Tabs>
- 	    }	
-		{locale === "pt" && 
-			<Tabs  maxWidth="30px" 
-			       flexDirection={widthS < 600 
-				   ? "row" 
-				   : "column" }
-				flexBasis={widthS < 600 
-				   ? "100" 
-				    : null }
-
-				>
-                <div label="Drones">
-                  <PDrones />
-				</div>
-				<div label="Coding">
-                  <PCoding />
-				</div>
-				<div label="Química">
-		          <PChem />
-				</div>
-			</ Tabs>
-	    }	
+        
 			</ProjectContainer>
 			 </>   
 			)
 }
-
-

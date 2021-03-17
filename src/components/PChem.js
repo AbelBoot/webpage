@@ -1,4 +1,5 @@
-import React, { useContext } from "react"
+import React, { useEffect, useContext } from "react"
+import { useSize } from "../custom/Size"
 import { LocaleContext } from "../custom/LocaleContext"
 import { H5, A } from "../theme/SmallComp"
 import { PChem1 } from "./PChem1"
@@ -11,6 +12,57 @@ import { PCDIVCONT, PCDIV1_1, PCDIV1_2, PCDIV1_2_00, PCDIV1_2_01, PCDIV1_2_02, P
 
 export const PChem = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
+	const widthS = useSize()
+	let mainChemTabProps = {
+       alignItems: "center"
+    }
+    let chem1Props = {
+      label: "Benzodiazepines and Ring Openings"
+    }
+    let chem2Props = {
+      label: "Molecularly Imprinted Polymers"
+    }
+    let chem3Props = {
+      label: "C-H Bond Activation, C-C Bond Cleavage"
+    }
+    //useEffect(() => {
+        if (widthS < 600 && locale === "en"){
+            chem1Props.label = "Ring Opening"
+            chem2Props.label = "MIP"
+            chem3Props.label = "C-H Activation"
+        }
+        if (widthS < 600 && locale === "fr"){
+            chem1Props.label = "Ouvertures de Cycles"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Activation C-H"
+        }
+        if (widthS < 600 && locale === "sp"){
+            chem1Props.label = "Apertura de anillos"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Activación C-H"
+        }
+        if (widthS < 600 && locale === "pt"){
+            chem1Props.label = "Abertura de anel"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Ativação C-H"
+        }
+        if (locale === "fr" ){
+    	    chem1Props.label = "Benzodiazépines et Ouvertures de Cycles"
+    	    chem2Props.label = "Polymères à empreinte moléculaire"
+    	    chem3Props.label = "Activation de liaisons C-H, Clivage de liaisons C-C"
+        }
+        if (locale === "sp" ){
+    	    chem1Props.label = "Benzodiazepinas y apertura de anillos"
+    	    chem2Props.label = "Polímeros de impresión molecular"
+    	    chem3Props.label = "Activación de enlace C-H, Ruptura de enlaces C-C"
+        }
+        if (locale === "pt" ){
+    	    chem1Props.label = "Benzodiazepinas e abertura de anel"
+    	    chem2Props.label = "Polímeros com impressão molecular"
+    	    chem3Props.label = "Ativação de ligação C-H, Ruptura de ligação C-C"
+        }
+    //})
+
 	return( <PCContainer>
 			<PCDIVCONT>
 			<PCDIV1_1>
@@ -74,62 +126,74 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        {locale === "en" && 
-        	<Tabs 
-        	alignItems="center">
-				<div label="Benzodiazepines and Ring Openings">
-				  <PChem1 />
-				</div>
-				<div label="Molecularly Imprinted Polymers">
-				  <PChem2 />
-				</div>
-				<div label="C-H Bond Activation, C-C Bond Cleavage">
-				  <PChem3 />
-				</div>
-			</ Tabs>
-        }
-		{locale === "fr" && 
-			<Tabs alignItems="center">
-				<div label="Benzodiazépines et Ouvertures de Cycles">
-				  <PChem1 />
-				</div>
-				<div label="Polymères à empreinte moléculaire">
-				  <PChem2 />
-				</div>
-				<div label="Activation de liaisons C-H, Clivage de liaisons C-C">
-				  <PChem3 />
-				</div>
-			</ Tabs>
-    	}
-    			
-		{locale === "sp" && 
-			<Tabs alignItems="center">
-				<div label="Benzodiazepinas y apertura de anillos">
-				  <PChem1 />
-				</div>
-				<div label="Polímeros de impresión molecular">
-				  <PChem2 />
-				</div>
-				<div label="Activación de enlace C-H, Ruptura de enlaces C-C">
-				  <PChem3 />
-				</div>
-			</ Tabs>
- 	    }	
-		{locale === "pt" && 
-			<Tabs alignItems="center">
-				<div label="Benzodiazepinas e abertura de anel">
-				  <PChem1 />
-				</div>
-				<div label="Polímeros com impressão molecular">
-				  <PChem2 />
-				</div>
-				<div label="Ativação de ligação C-H, Ruptura de ligação C-C">
-				  <PChem3 />
-				</div>
-			</ Tabs>
-	    }	
-	
 
+        	<Tabs {...mainChemTabProps}>
+				<div {...chem1Props}>
+				  <PChem1 />
+				</div>
+				<div {...chem2Props}>
+				  <PChem2 />
+				</div>
+				<div {...chem3Props}>
+				  <PChem3 />
+				</div>
+			</ Tabs>
 				</PCContainer>
 	    )
 }
+  //       {locale === "en" && 
+  //       	<Tabs 
+  //       	alignItems="center">
+		// 		<div label="Benzodiazepines and Ring Openings">
+		// 		  <PChem1 />
+		// 		</div>
+		// 		<div label="Molecularly Imprinted Polymers">
+		// 		  <PChem2 />
+		// 		</div>
+		// 		<div label="C-H Bond Activation, C-C Bond Cleavage">
+		// 		  <PChem3 />
+		// 		</div>
+		// 	</ Tabs>
+  //       }
+		// {locale === "fr" && 
+		// 	<Tabs alignItems="center">
+		// 		<div label="Benzodiazépines et Ouvertures de Cycles">
+		// 		  <PChem1 />
+		// 		</div>
+		// 		<div label="Polymères à empreinte moléculaire">
+		// 		  <PChem2 />
+		// 		</div>
+		// 		<div label="Activation de liaisons C-H, Clivage de liaisons C-C">
+		// 		  <PChem3 />
+		// 		</div>
+		// 	</ Tabs>
+  //   	}
+    			
+		// {locale === "sp" && 
+		// 	<Tabs alignItems="center">
+		// 		<div label="Benzodiazepinas y apertura de anillos">
+		// 		  <PChem1 />
+		// 		</div>
+		// 		<div label="Polímeros de impresión molecular">
+		// 		  <PChem2 />
+		// 		</div>
+		// 		<div label="Activación de enlace C-H, Ruptura de enlaces C-C">
+		// 		  <PChem3 />
+		// 		</div>
+		// 	</ Tabs>
+ 	//     }	
+		// {locale === "pt" && 
+		// 	<Tabs alignItems="center">
+		// 		<div label="Benzodiazepinas e abertura de anel">
+		// 		  <PChem1 />
+		// 		</div>
+		// 		<div label="Polímeros com impressão molecular">
+		// 		  <PChem2 />
+		// 		</div>
+		// 		<div label="Ativação de ligação C-H, Ruptura de ligação C-C">
+		// 		  <PChem3 />
+		// 		</div>
+		// 	</ Tabs>
+	 //    }	
+	
+
