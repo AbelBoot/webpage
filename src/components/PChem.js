@@ -26,27 +26,7 @@ export const PChem = () => {
       label: "C-H Bond Activation, C-C Bond Cleavage"
     }
     //useEffect(() => {
-        if (widthS < 600 && locale === "en"){
-            chem1Props.label = "Ring Opening"
-            chem2Props.label = "MIP"
-            chem3Props.label = "C-H Activation"
-        }
-        if (widthS < 600 && locale === "fr"){
-            chem1Props.label = "Ouvertures de Cycles"
-            chem2Props.label = "MIP"
-            chem3Props.label = "Activation C-H"
-        }
-        if (widthS < 600 && locale === "sp"){
-            chem1Props.label = "Apertura de anillos"
-            chem2Props.label = "MIP"
-            chem3Props.label = "Activación C-H"
-        }
-        if (widthS < 600 && locale === "pt"){
-            chem1Props.label = "Abertura de anel"
-            chem2Props.label = "MIP"
-            chem3Props.label = "Ativação C-H"
-        }
-        if (locale === "fr" ){
+    	if (locale === "fr" ){
     	    chem1Props.label = "Benzodiazépines et Ouvertures de Cycles"
     	    chem2Props.label = "Polymères à empreinte moléculaire"
     	    chem3Props.label = "Activation de liaisons C-H, Clivage de liaisons C-C"
@@ -60,6 +40,29 @@ export const PChem = () => {
     	    chem1Props.label = "Benzodiazepinas e abertura de anel"
     	    chem2Props.label = "Polímeros com impressão molecular"
     	    chem3Props.label = "Ativação de ligação C-H, Ruptura de ligação C-C"
+        }
+    	if (widthS < 600){
+
+    	    if (locale === "sp"){
+            chem1Props.label = "Apertura de anillos"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Activación C-H"
+            }
+            if (locale === "en"){
+            chem1Props.label = "Ring Opening"
+            chem2Props.label = "MIP"
+            chem3Props.label = "C-H Activation"
+            }
+            if (locale === "fr"){
+            chem1Props.label = "Ouvertures de Cycles"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Activation C-H"
+            }
+            if (locale === "pt"){
+            chem1Props.label = "Abertura de anel"
+            chem2Props.label = "MIP"
+            chem3Props.label = "Ativação C-H"
+            }
         }
     //})
 
