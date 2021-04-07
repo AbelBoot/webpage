@@ -16,9 +16,11 @@ export const PCDIV1_2 = styled.div`
 `
 export const PCDIV1_2_00 = styled.div`
     display: flex;
-	flex-direction: row;  
+	flex-direction: row; 
+	flex-wrap: wrap; 
 `
 export const PCDIV1_2_01 = styled.div`  
+	
 `
 export const PCDIV1_2_02 = styled.div`   
 `

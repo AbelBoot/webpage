@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react"
 import { useSize } from "../custom/Size"
 import { LocaleContext } from "../custom/LocaleContext"
-import { H5, A } from "../theme/SmallComp"
+import { H5, A, ASimple } from "../theme/SmallComp"
 import { PChem1 } from "./PChem1"
 import { PChem2 } from "./PChem2"
 import { PChem3 } from "./PChem3"
@@ -89,7 +89,7 @@ export const PChem = () => {
 			</PCDIV1_2_02>
 			<PCDIV1_2_03>
             {locale === "en" && 
-			<><H5>or look at my </H5>
+			<><H5>, or look at my </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
@@ -98,7 +98,7 @@ export const PChem = () => {
 			</>
 			}
 			{locale === "fr" && 
-			<><H5>ou jetez un coup d'œil à ma </H5>
+			<><H5>, ou jetez un coup d'œil à ma </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
@@ -107,7 +107,7 @@ export const PChem = () => {
 			</>
 			}
 			{locale === "sp" && 
-			<><H5>o consulte mi </H5>
+			<><H5>, o consulte mi </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 
@@ -116,7 +116,7 @@ export const PChem = () => {
 			</>
 			}
 			{locale === "pt" && 
-			<><H5>o olha o meu </H5>
+			<><H5>, o olha o meu </H5>
 			<A
 			  paddingTop="2"
 			  target="_blank" 

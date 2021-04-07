@@ -46,6 +46,11 @@ ${(props) => props.color && `
     color: ${props.color};
     `
 }
+${(props) => props.flex && `
+    position: relative;
+    `
+}
+
 `
 
 export const H4 = styled.h4`
