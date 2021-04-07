@@ -5,6 +5,7 @@ export const PCDIVCONT = styled.div`
   	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	padding-bottom: 3vw;
 `
 export const PCDIV1_1 = styled.div`
     flex-basis: 100%;

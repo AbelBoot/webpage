@@ -12,7 +12,10 @@ export const PChem3 = () => {
 			<Image img={"NbReaction"} 
 					bottom="2" 
 					right="5"
-					height="20"/>
+					height="20"
+					flex
+					flexJustify
+					/>
 			</PCDIVHORIZ_1> 
 			<PCDIVHORIZ_2>
 			{locale === "en" && <H5 marginBottom="3em">Activation of Carbon-Hydrogen bonds has been a hot topic in chemistry for the last decades. Functionalizing small alkanes in large-scale reactions would allow easy implementations of hydrogen storage, among other environmental technologies. In the reaction depicted above, a C-H bond of a molecule of benzene is functionalized using a Niobium complex. These complexes have been extensively studied in the papers below.</H5>}
