@@ -316,10 +316,8 @@ export const Image = styled.img.attrs(props => ({
   
   background-size: contain;
   background-repeat: no-repeat;
-  ${(props) => props.flex && css `
-  display: flex;
-  ` }
   ${(props) => props.flexJustify && css `
+  display: flex;
   justify-content: center;
   ` }
   

@@ -13,7 +13,6 @@ export const PChem3 = () => {
 					bottom="2" 
 					right="5"
 					height="20"
-					flex
 					flexJustify
 					/>
 			</PCDIVHORIZ_1> 
