@@ -4,15 +4,16 @@ import { useSize } from "../custom/Size"
 import { Image, H5, A } from "../theme/SmallComp"
 import { Icon } from "./Icons"
 import { violet } from "../theme/variables"
-import {  PCDIVInt1, PCDIVVERT_1, PCDIVVERT_2, PCDIVVERT_1_Sm, PCDIVVERT_2_Sm, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
+import {  PCDIVInt1, PCDIVVERT_1, PCDIVVERT_2, PCDIVVERT_0_Sm, PCDIVVERT_1_Sm, PCDIVVERT_2_Sm, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
 
 export const PChem1 = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
 
 	return( <PCDIVInt1>
-		    { widthS < 400 
+		    { widthS < 600 
 		    	? <>
+				<PCDIVVERT_0_Sm>
       			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1">
                     <Image img={"dibenzoTS"} 
 					bottom="2" 
@@ -25,6 +26,7 @@ export const PChem1 = () => {
 			        {locale === "sp" && <H5 marginBottom="3em">Las benzodiazepinas son una clase de medicamentos psicotrópicos en el mundo de las enfermedades mentales. Alprazolam, clonazepam, diazepam son ejemplos de estos medicamentos que se usan para tratar trastornos psicóticos. Tienen gran afinidad con los receptores GABA-A. Las dibenzodiazepinas (DBDA) son una sub-clase de estos farmacos e incluyen un anillo de diazepina unido a dos anillos de benceno. La clozapina es probablemente la más importante, debido a su presencia en la lista de medicamentos esenciales de la Organización Mundial de la Salud. Todavía existen pocos métodos químicos sintéticos para las DBDAs. Presentamos la primera síntesis catalizada por paladio de dibenzodiacepinas utilizando o-bromoarilaminas y o-bromoariliminas, en condiciones de aminación de Buchwald-Hartwig. En la imagen, se puede ver una rupture del enlace Nitrógeno-Azufre catalizada por un ligando a base de paladio.</H5>}	
 			        {locale === "pt" && <H5 marginBottom="3em">Os benzodiazepínicos são uma classe de medicamentos farmacêuticos importantes para qualquer pessoa familiarizada com doenças mentais no mundo ocidental. Alprazolam, clonazepam, diazepam são exemplos de famosos benzodiazepínicos usados para tratar distúrbios psicóticos. Seu modo de ação consiste principalmente na ligação de vários locais aos receptores GABA-A. Os dibenzodiazepínicos (DBDA) são uma subclasse desses produtos farmacêuticos e incluem um anel de diazepina fundido com dois anéis de benzeno. A clozapina é provavelmente a mais importante, devido à sua presença na lista modelo de medicamentos essenciais da OMS. Poucos métodos químicos sintéticos estão disponíveis para o backbone DBDA. Nesse papel, relatamos a primeira síntese catalisada por paládio de dibenzodiazepinas usando o-bromoarilaminas e o-bromoariminas, sob condições de aminação de Buchwald-Hartwig. Na figura, podemos ver uma clivagem da ligação Nitrogênio-Enxofre catalisada por um ligante à base de paládio.</H5>}
 		          </PCDIVVERT_2_Sm>
+				  </PCDIVVERT_0_Sm>
 		    	</>
 		    	: <>
 		    	  <PCDIVVERT_1 paddingRight="3" paddingLeft="1">

@@ -51,18 +51,21 @@ export const PCDIVInt1 = styled.div`
 
 
 // check on the padding to play with the columns
+
 export const PCDIVVERT_1 = styled.div`  
 max-width: 50%;
 padding-right: ${props => props.paddingRight}vw;
 padding-left: ${props => props.paddingLeft}vw;
-
 `
 export const PCDIVVERT_2 = styled.div`
 max-width: 50%;
 `
-
+export const PCDIVVERT_0_Sm = styled.div`  
+display: flex;
+flex-wrap: wrap;
+`
 export const PCDIVVERT_1_Sm = styled.div`  
-min-width: 100%;
+flex-basis: 100%;
 padding-right: ${props => props.paddingRight}vw;
 padding-left: ${props => props.paddingLeft}vw;
 

@@ -4,15 +4,16 @@ import { useSize } from "../custom/Size"
 import { Image, H5, A } from "../theme/SmallComp"
 import { Icon } from "./Icons"
 import { violet } from "../theme/variables"
-import { PCDIVInt1, PCDIVVERT_1, PCDIVVERT_2, PCDIVVERT_2_Sm, PCDIVVERT_1_Sm, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
+import { PCDIVInt1, PCDIVVERT_1, PCDIVVERT_2, PCDIVVERT_0_Sm, PCDIVVERT_2_Sm, PCDIVVERT_1_Sm, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
 
 export const PChem2 = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
 
 	return( <PCDIVInt1>
-		    { widthS < 400 
+		    { widthS < 600 
 		    	? <>
+				<PCDIVVERT_0_Sm>
   			      <PCDIVVERT_1_Sm paddingRight="10" paddingLeft="4">
 				    <Image img={"DeltamethrinVerticalBig"} 
 					  bottom="2" 
@@ -26,6 +27,7 @@ export const PChem2 = () => {
 			        {locale === "sp" && <H5 marginBottom="5em">La deltametrina es un piretroide que tiene una actividad insecticida muy eficaz, y es muy utilizado en agricultura. Por ser neurotóxico, pero también sospechoso de actuar como interruptor endocrino, su extracción del aceite de oliva es fundamental. Una de las técnicas utilizadas para lograr esto es utilizar polímeros de impresión molecular (MIP). Un MIP se genera creando una matriz entre monómeros functionales, y una molécula molde. En este caso, el ácido metacrílico (MAA), la acrilamida (AM), y la deltametrina, respectivamente. Tras la generación del MIP, se extrae la molécula molde, pero se conserva la afinidad del MIP hacia ella, gracias a las cavidades que quedan. Eso permite su futura extracción cuando el MIP se aplique a otros medios, como el aceite de oliva. En el artículo siguiente, se describen varios cálculos que pudieron demostrar que el complejo formado entre la deltametrina y la acrilamida (imagen de abajo) es más estable que el complejo formado con MAA (imagen de arriba). Esto es conforme con el mayor efecto de impresión de la acrilamida sobre la deltametrina en este entorno.</H5>}	
 			        {locale === "pt" && <H5 marginBottom="5em">A deltametrina é um piretróide que tem uma atividade inseticida muito eficaz e é amplamente utilizado na agricultura. Sustancia neurotóxica, mas também suspeita de atuar como desregulador endócrino, sua extração do azeite é essencial. Uma das técnicas usadas para conseguir isso é usar polímeros com impressão molecular (MIP). Um MIP é gerado criando uma matriz entre monômeros funcionais (neste caso, o ácido metacrílico (MAA) e a acrilamida (AM)) e uma molécula molde (neste caso, a deltametrina). Depois do processo de geração do MIP, a molécula molde é clivada, mas a afinidade do MIP com ela é preservada (graças as cavidades que deixa). Isso permite uma extração posterior, quando o MIP é aplicado a outros meios (como o azeite). No artigo a seguir, são descritos alguns cálculos que foram capazes de demonstrar que o complexo formado entre a deltametrina e a acrilamida (AM, imagem abaixo) é mais estável do que o complexo formado com el MAA (imagem acima). Isso é consistente com o maior efeito de impressão da acrilamida sobre a deltametrina nesse ambiente.</H5>}
 			      </PCDIVVERT_2_Sm>
+				</PCDIVVERT_0_Sm>
 		    	</>
 		    	: <>
                   <PCDIVVERT_1 paddingRight="10" paddingLeft="4">
