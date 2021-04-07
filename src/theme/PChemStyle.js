@@ -62,7 +62,7 @@ max-width: 50%;
 `
 
 export const PCDIVVERT_1_Sm = styled.div`  
-width: 100%;
+min-width: 100%;
 padding-right: ${props => props.paddingRight}vw;
 padding-left: ${props => props.paddingLeft}vw;
 

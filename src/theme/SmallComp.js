@@ -316,7 +316,7 @@ export const Image = styled.img.attrs(props => ({
   
   background-size: contain;
   background-repeat: no-repeat;
-  ${(props) => props.flexJustify && css `
+  ${(props) => props.justify && css `
   display: block;
   margin-left: auto;
   margin-right: auto;
