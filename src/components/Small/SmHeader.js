@@ -23,7 +23,7 @@ export const SmHeader = ({burger, setBurger}) => {
 				? <HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
 				:  null }
             <HeadDiv1 marginBottom={.4}> 
-            <HamburgerContainer burger={burger} onClick={handleClick}> 
+            <HamburgerContainer key={widthS} burger={burger} onClick={handleClick}> 
             { burger
 				? <><HeadDivIconHamburger><Icon name="hamburger" color={violet}/></HeadDivIconHamburger></>
 				: <><HeadDivIconHamburger flexBasis={"100"} ><Icon name="cross" width={"15"} color={violet}/></HeadDivIconHamburger></>

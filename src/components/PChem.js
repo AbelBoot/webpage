@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react"
+import React, { useEffect, useContext, useCallback } from "react"
 import { useSize } from "../custom/Size"
 import { LocaleContext } from "../custom/LocaleContext"
 import { H5, A, ASimple } from "../theme/SmallComp"
@@ -10,9 +10,12 @@ import { Icon } from "./Icons"
 import { PCContainer } from "../theme/Containers"
 import { PCDIVCONT, PCDIV1_1, PCDIV1_2, PCDIV1_2_00, PCDIV1_2_01, PCDIV1_2_02, PCDIV1_2_03 } from "../theme/PChemStyle"
 
+
 export const PChem = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
+
+
 	let mainChemTabProps = {
        alignItems: "center"
     }
@@ -25,7 +28,7 @@ export const PChem = () => {
     let chem3Props = {
       label: "C-H Bond Activation, C-C Bond Cleavage"
     }
-    //useEffect(() => {
+
     	if (locale === "fr" ){
     	    chem1Props.label = "Benzodiazépines et Ouvertures de Cycles"
     	    chem2Props.label = "Polymères à empreinte moléculaire"
@@ -40,9 +43,9 @@ export const PChem = () => {
     	    chem1Props.label = "Benzodiazepinas e abertura de anel"
     	    chem2Props.label = "Polímeros com impressão molecular"
     	    chem3Props.label = "Ativação de ligação C-H, Ruptura de ligação C-C"
-        }
-    	if (widthS < 600){
-
+		}
+			
+    	if (widthS < 600){	
     	    if (locale === "sp"){
             chem1Props.label = "Apertura de anillos"
             chem2Props.label = "MIP"
@@ -64,7 +67,7 @@ export const PChem = () => {
             chem3Props.label = "Ativação C-H"
             }
         }
-    //})
+
 
 	return( <PCContainer>
 			<PCDIVCONT>
@@ -129,10 +132,9 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-
-        	<Tabs {...mainChemTabProps}>
-				<div {...chem1Props}>
-				  <PChem1 />
+        	<Tabs key={widthS} {...mainChemTabProps} >
+				<div {...chem1Props} >
+				  <PChem1 {...widthS}/>
 				</div>
 				<div {...chem2Props}>
 				  <PChem2 />
@@ -141,6 +143,7 @@ export const PChem = () => {
 				  <PChem3 />
 				</div>
 			</ Tabs>
+
 				</PCContainer>
 	    )
 }

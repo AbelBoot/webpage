@@ -23,7 +23,7 @@ console.log("clearing form")
 		return (
 			<>
 			<HeaderContainer burger={burger} setBurger={setBurger}>
-			{widthS < 520 ? <SmHeader burger={burger} setBurger={setBurger}/> : <BgHeader burger={burger} setBurger={setBurger}/>}
+			{widthS < 520 ? <SmHeader key={widthS} burger={burger} setBurger={setBurger}/> : <BgHeader burger={burger} setBurger={setBurger}/>}
 			</HeaderContainer>
 			</>
 			)
