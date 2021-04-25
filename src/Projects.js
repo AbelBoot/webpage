@@ -65,15 +65,15 @@ export const Projects = () => {
 			<ProjectContainer
         	    {...projectContainerProps}
 			>
-        	<Tabs key={widthS} {...mainTabProps}>
+        	<Tabs {...mainTabProps}>
                 <div label="Drones">
-                  <PDrones />
+                  <PDrones key={widthS}/>
 				</div>
 				<div label="Coding">
-                  <PCoding />
+                  <PCoding key={widthS}/>
 				</div>
 				<div {...chemistryTabProps}>
-		          <PChem />
+		          <PChem key={widthS}/>
 				</div>
 			</ Tabs>
         
