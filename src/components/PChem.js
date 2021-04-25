@@ -132,15 +132,15 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        	<Tabs {...widthS} {...mainChemTabProps} >
+        	<Tabs {...widthS} locale={locale} {...mainChemTabProps} >
 				<div {...chem1Props} >
-				  <PChem1 {...widthS}/>
+				  <PChem1 {...widthS} locale={locale}/>
 				</div>
 				<div {...chem2Props}>
-				  <PChem2 {...widthS}/>
+				  <PChem2 {...widthS} locale={locale}/>
 				</div>
 				<div {...chem3Props}>
-				  <PChem3 {...widthS}/>
+				  <PChem3 {...widthS} locale={locale}/>
 				</div>
 			</ Tabs>
 
