@@ -9,7 +9,7 @@ import { PCODIV1, PCODIV2_00, PCODIV2_01, PCODIV2_01_1, PCODIV2_01_2, PCODIV2_01
 export const PCoding = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	return(
-                <PCoContainer>
+                <PCoContainer >
 				<PCODIV1>
 				{locale === "en" && <><H5>Here are some of my programming skills. Over the last two years, I have been learning to use a number of tools and frameworks in my free time. Below, are some of the technologies I used the most. Currently, I am mostly focusing on JavaScript and React.</H5><H5>This webpage has been fully done in React. The repository for this website and my other works are available at the links below.</H5></>}
 				{locale === "fr" && <><H5>Voici quelques-unes de mes compétences en programmation. Au cours des deux dernières années, j'ai appris à utiliser un certain nombre d’outils et de frameworks, pendant mon temps libre. Ci-dessous, quelques-uns de ceux que j'ai le plus utilisés. Actuellement, je me concentre principalement sur JavaScript et React.</H5><H5>Cette page Web a été entièrement réalisée avec React. Le dépôt de ce site Web, et ceux de mes autres projets, peuvent être consultés en cliquant sur les liens ci-dessous.</H5></>}

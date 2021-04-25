@@ -69,7 +69,7 @@ export const PChem = () => {
         }
 
 
-	return( <PCContainer>
+	return( <PCContainer >
 			<PCDIVCONT>
 			<PCDIV1_1>
 			{locale === "en" && <H5>I have worked as a researcher in Computational Chemistry until 2015. Computational chemistry is a branch of chemistry that applies some principles of theoretical chemistry to real-world applications. Understanding reaction mechanisms at a molecular level is one of these applications. Below are some of the topics I worked on, mostly in the field of homogeneous catalysis, and the links to the related papers I co-authored.</H5>}
@@ -132,15 +132,15 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        	<Tabs {...widthS} locale={locale} {...mainChemTabProps} >
+        	<Tabs wid={widthS} locale={locale} {...mainChemTabProps} >
 				<div {...chem1Props} >
-				  <PChem1 {...widthS} locale={locale}/>
+				  <PChem1 wid={widthS} locale={locale}/>
 				</div>
 				<div {...chem2Props}>
-				  <PChem2 {...widthS} locale={locale}/>
+				  <PChem2 wid={widthS} locale={locale}/>
 				</div>
 				<div {...chem3Props}>
-				  <PChem3 {...widthS} locale={locale}/>
+				  <PChem3 wid={widthS} locale={locale}/>
 				</div>
 			</ Tabs>
 

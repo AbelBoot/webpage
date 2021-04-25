@@ -22,12 +22,15 @@ export default class Tabs extends React.Component {
 		return (
 			<>
 			<OlTabs 				
+				keyUnique={this.props.locale}
 				flexBasis={this.props.flexBasis}
 				flexDirection={this.props.flexDirection}
 				>
 				{children.map((tab) => {
 					return (
 						<Tab
+							keyLocale={this.props.locale}
+							keyWidth={this.props.wid}
 							key={tab.props.label}
 							label={tab.props.label}
 							activeTab={activeTab}
