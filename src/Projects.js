@@ -62,7 +62,7 @@ export const Projects = () => {
 		return (
 			<>
             <Welcome />
-			<ProjectContainer
+			<ProjectContainer locale={locale}
         	    {...projectContainerProps}
 			>
         	<Tabs locale={locale} {...mainTabProps}>
