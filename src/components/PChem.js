@@ -132,7 +132,7 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        	<Tabs {...mainChemTabProps} >
+        	<Tabs {...widthS} {...mainChemTabProps} >
 				<div {...chem1Props} >
 				  <PChem1 {...widthS}/>
 				</div>
