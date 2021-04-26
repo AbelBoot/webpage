@@ -29,8 +29,8 @@ export default class Tabs extends React.Component {
 				{children.map((tab) => {
 					return (
 						<Tab
-							keyLocale={this.props.locale}
-							keyWidth={this.props.wid}
+							//keyLocale={this.props.locale}
+							//keyUnique={this.props.wid}
 							key={tab.props.label}
 							label={tab.props.label}
 							activeTab={activeTab}

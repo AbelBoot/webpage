@@ -10,7 +10,7 @@ export const PChem1 = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
 
-		return( <PCDIVInt1 locale={locale}>
+		return( <PCDIVInt1>
 		    { widthS < 600 
 		    	? <>
 				<PCDIVVERT_0_Sm>

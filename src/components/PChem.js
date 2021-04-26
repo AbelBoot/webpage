@@ -14,7 +14,7 @@ import { PCDIVCONT, PCDIV1_1, PCDIV1_2, PCDIV1_2_00, PCDIV1_2_01, PCDIV1_2_02, P
 export const PChem = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
-
+	let test = widthS + locale
 
 	let mainChemTabProps = {
        alignItems: "center"
@@ -132,15 +132,15 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        	<Tabs wid={widthS} locale={locale} {...mainChemTabProps} >
+        	<Tabs key={test} {...mainChemTabProps} >
 				<div {...chem1Props} >
-				  <PChem1 wid={widthS} locale={locale}/>
+				  <PChem1 key={test} />
 				</div>
 				<div {...chem2Props}>
-				  <PChem2 wid={widthS} locale={locale}/>
+				  <PChem2  key={test} />
 				</div>
 				<div {...chem3Props}>
-				  <PChem3 wid={widthS} locale={locale}/>
+				  <PChem3  key={test} />
 				</div>
 			</ Tabs>
 

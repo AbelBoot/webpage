@@ -1,32 +1,24 @@
-import React, { useContext } from "react"
+import React from "react"
 import { ListTab } from "../theme/SmallComp"
 import { SpanTab } from "../theme/SmallComp"
-import { LocaleContext } from "../custom/LocaleContext"
 
+export class Tab extends React.Component {
+	
+	onClick = () => {
+		const { onClick, label } = this.props
+		onClick(label)
+	}
 
-const handleClick = (label, clicking) => {
-	//const { onClick, label } = props
-	clicking(label)
-}
+	render(){
+		const {label, activeTab} = this.props
 
-//export class Tab extends React.Component {
-export  const Tab = (props) => {
-console.log("popsss", props)
-	//render(){
-		//const {label, activeTab} = props
-	const { locale, updateLocale } = useContext(LocaleContext)
 		return (
-			<SpanTab key={locale}	><ListTab 
-				key={locale}	
-				keyWid={props.keyWid}	
-				onClick={() => handleClick(props.label, props.onClick)}
-				selected={props.activeTab === props.label}
+			<SpanTab><ListTab 
+				onClick={this.onClick}
+				selected={activeTab === label}
 			>
-				{props.label}
+				{label}
 			</ListTab></SpanTab>
 			)
-	//}
-	
+	}
 }
-
-//}

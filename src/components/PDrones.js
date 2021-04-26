@@ -8,10 +8,11 @@ import { PDContainer } from "../theme/Containers"
 import { PDDIV1, PDDIV2_00, PDDIV2_01, PDDIV2_02, PDDIV2_03, PDDIV2_04, PDDIV2_05, PDDIV3, PDDIV4 } from "../theme/PDronesStyle"
 
 
-export const PDrones = () => {
+export const PDrones = ({wid}) => {
 	const { locale, updateLocale } = useContext(LocaleContext)
+	console.log("widddd", wid)
 	return(
-				<PDContainer >
+				<PDContainer wid={wid}>
 				<PDDIV1>
 				{locale === "en" && <H5>In the Youtube videos below, you can find a full tutorial on how to control a Tello DJI drone using gesture recognition, without using the official app. The principle is the following: you perform movements in front of the webcam of your laptop, and the drone responds accordingly. Depending on the location of the movement and its intensity, a command is sent through the UDP protocol to the drone. Node.js is used for the back-end, and React.js for the front-end. Manipulation of the pixel data from the video stream is made possible by a canvas html element. You can check the repository here: https://github.com/AbelBoot/Drone-Gesture-Recognition, or clicking on the GitHub icon below.</H5>}
 				{locale === "fr" && <H5>Sur ma chaîne Youtube, vous pourrez trouver un tutoriel complet sur comment contrôler un drone Tello DJI par reconnaissance gestuelle, sans utiliser l'application officielle. Le principe est le suivant: vous effectuez des mouvements devant la webcam de votre ordinateur portable, et le drone répond en fonction. Selon l’endroit où vous bougez et l’ intensité du mouvement, une commande est envoyée via le protocole UDP. Node.js est utilisé pour le back-end, et React.js pour le front-end. La manipulation des données de pixels du flux vidéo est faite grâce à une balise canvas html. Vous pouvez consulter le code ici: https://github.com/AbelBoot/Drone-Gesture-Recognition, ou en cliquant sur l'icône GitHub ci-dessous.</H5>}

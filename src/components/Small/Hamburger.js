@@ -13,7 +13,7 @@ export const Hamburger = ({burger}) => {
 
 	return (
 		<>
-        <HamburgerMenuContainer burger={burger}>
+        <HamburgerMenuContainer key={widthS} burger={burger}>
            <HeadDivLinkHamburger>
            <HeaderLinkHamburger to="/" style={{textDecoration: "none"}}><HeadDiv1Hamburger> Projects </HeadDiv1Hamburger></HeaderLinkHamburger>
 	       <HeaderLinkHamburger to="/contact" style={{textDecoration: "none"}}><HeadDiv1Hamburger>  Contact </HeadDiv1Hamburger></HeaderLinkHamburger>			

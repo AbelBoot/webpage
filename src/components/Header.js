@@ -18,7 +18,7 @@ export const Header = () => {
 console.log("clearing form")
     	//success = false
     }
-    console.log("widthS", widthS)
+    //console.log("widthS", widthS)
     
 		return (
 			<>

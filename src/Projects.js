@@ -25,6 +25,11 @@ import { ProjectContainer} from "./theme/Containers"
 export const Projects = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	const widthS = useSize()
+	console.log("widthh", widthS)
+	console.log("localee", locale)
+	let test = widthS + locale
+	console.log("test", test)
+	let variables = [widthS, locale]
 //Tabs also responsive with 
 //<Tabs maxWidth="30px" dir={window.innerWidth < 767 
 //? "row" : "column" }>
@@ -65,15 +70,15 @@ export const Projects = () => {
 			<ProjectContainer locale={locale}
         	    {...projectContainerProps}
 			>
-        	<Tabs wid={widthS} locale={locale} {...mainTabProps}>
+        	<Tabs key={locale} {...mainTabProps}>
                 <div label="Drones">
-                  <PDrones wid={widthS} locale={locale}/>
+                  <PDrones test={test} key={locale}/>
 				</div>
 				<div label="Coding">
-                  <PCoding wid={widthS} locale={locale}/>
+                  <PCoding test={test} key={locale}/>
 				</div>
 				<div {...chemistryTabProps}>
-		          <PChem wid={widthS} locale={locale}/>
+		          <PChem test={test} key={locale}/>
 				</div>
 			</ Tabs>
         
