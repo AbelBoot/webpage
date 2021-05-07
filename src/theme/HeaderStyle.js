@@ -56,7 +56,6 @@ display: flex;
     `
   };
 justify-content: flex-end;
-
 `
 
 export const HeaderLinkHamburger = styled(Link)`
@@ -66,7 +65,7 @@ export const HeaderLinkHamburger = styled(Link)`
   }  
   font-weight: bold;
   font-size: 1.3em;
-  flex-basis: 40%;
+  flex-basis: 90%;
 `
 
 export const HeaderDivHamburger = styled.div`
