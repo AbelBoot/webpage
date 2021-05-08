@@ -1,7 +1,7 @@
 import styled  from "styled-components"
 
 export const PDDIV1 = styled.div`
-  
+  padding-right: .5em;
 `
 
 export const PDDIV2_00 = styled.div`
