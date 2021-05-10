@@ -314,7 +314,7 @@ export const Image = styled.img.attrs(props => ({
   max-width: ${props => props.maxWidth}%;
   min-width: ${props => props.minWidth}%;
   height: ${props => props.height}vw; 
-  
+  min-height: ${props => props.minHeight}vh; 
   background-size: contain;
   background-repeat: no-repeat;
   ${(props) => props.justify && css `
