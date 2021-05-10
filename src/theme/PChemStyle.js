@@ -67,7 +67,8 @@ flex-wrap: wrap;
 `
 export const PCDIVVERT_1_Sm = styled.div`  
 flex-basis: 100%;
-height: ${props => props.smallHeight}vh;
+min-height: 50vh;
+//height: ${props => props.smallHeight}vh;
 padding-right: ${props => props.paddingRight}vw;
 padding-left: ${props => props.paddingLeft}vw;
 
