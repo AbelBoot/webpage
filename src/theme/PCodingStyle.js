@@ -2,6 +2,7 @@ import styled  from "styled-components"
 
 export const PCODIV1 = styled.div`
   min-height: 20vh;
+  padding-right: .5em;
 `
 
 // export const PCODIV2 = styled.div`

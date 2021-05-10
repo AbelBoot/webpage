@@ -8,7 +8,8 @@ export const PCDIVCONT = styled.div`
 	padding-bottom: 3vw;
 `
 export const PCDIV1_1 = styled.div`
-    flex-basis: 100%;
+	flex-basis: 100%;
+	padding-right: .5em;
 `
 export const PCDIV1_2 = styled.div`
   	display: flex;

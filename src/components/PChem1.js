@@ -18,7 +18,8 @@ export const PChem1 = () => {
                     <Image img={"dibenzoTS"} 
 					bottom="2" 
 					right="5"
-					height="25"/>
+					height="25"
+					minWidth="100"/>
                   </PCDIVVERT_1_Sm> 
 			      <PCDIVVERT_2_Sm>
                     {locale === "en" && <H5 marginBottom="3em">Benzodiazepines are a class of pharmaceutical drugs used to treat psychotic disorders. Examples of famous benzodiazepines are: alprazolam, clonazepam, and diazepam. Their mode of action mostly consists of binding various sites on the GABA-A receptors. Dibenzodiazepines (DBDA) are a sub-class of these pharmaceuticals, and include a diazepine ring fused with two benzene rings. Clozapine is one of the most significant ones, due to its presence on the WHO model list of essential medicines. In this paper, we report the first Palladium-catalyzed synthesis of dibenzodiazepines using o-bromoarylamines and o-bromoarylimines, under Buchwald-Hartwig amination conditions. In the picture, we can see a Nitrogen-Sulfur bond cleavage catalysed by a Palladium-based ligand.</H5>}
