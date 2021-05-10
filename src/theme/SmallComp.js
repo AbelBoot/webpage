@@ -311,8 +311,9 @@ export const Image = styled.img.attrs(props => ({
 }))`
   bottom: ${props => props.bottom}vw;
   right: ${props => props.right}vw;
-    max-width: ${props => props.maxWidth}%;
-    height: ${props => props.height}vw; 
+  max-width: ${props => props.maxWidth}%;
+  min-width: ${props => props.minWidth}%;
+  height: ${props => props.height}vw; 
   
   background-size: contain;
   background-repeat: no-repeat;
