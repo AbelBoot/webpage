@@ -8,7 +8,7 @@ import { PCDIVInt1, PCDIVHORIZ_1, PCDIVHORIZ_2, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDI
 export const PChem3 = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
 	return( <PCDIVInt1 locale={locale}>
-			<PCDIVHORIZ_1>
+			<PCDIVHORIZ_1 smallHeight="25">
 			<Image img={"NbReaction"} 
 					bottom="2" 
 					right="5"

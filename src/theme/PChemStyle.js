@@ -81,6 +81,7 @@ width: 100%;
 //image on movile
 export const PCDIVHORIZ_1 = styled.div`	
 width: 100%;
+min-height: ${props => props.smallHeight}vh;
 `
 export const PCDIVHORIZ_2 = styled.div`  
 `
