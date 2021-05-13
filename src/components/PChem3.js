@@ -1,18 +1,21 @@
 import React, { useContext } from "react"
 import { LocaleContext } from "../custom/LocaleContext"
 import { Image, H5, A } from "../theme/SmallComp"
+import { useSize } from "../custom/Size"
 import { Icon } from "./Icons"
 import { violet } from "../theme/variables"
 import { PCDIVInt1, PCDIVHORIZ_1, PCDIVHORIZ_2, PCDIVQ, PCDIVQ_1, PCDIVQ_2, PCDIVQ_3 } from "../theme/PChemStyle"
 
 export const PChem3 = () => {
 	const { locale, updateLocale } = useContext(LocaleContext)
+	const widthS = useSize()
 	return( <PCDIVInt1 locale={locale}>
 			<PCDIVHORIZ_1 smallHeight="15">
 			<Image img={"NbReaction"} 
 					bottom="2" 
 					right="5"
-					minHeight="15"
+					minHeight={widthS < 600 
+						? "15" : "25"}
 					justify
 					/>
 			</PCDIVHORIZ_1> 

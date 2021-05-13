@@ -19,7 +19,7 @@ export const PChem2 = () => {
 					  bottom="2" 
 					  right="5"
 					  //maxWidth="100"
-					  minHeight="15"
+					  minHeight="20"
 					  //height="40"
 					  />
 			      </PCDIVVERT_1_Sm> 
