@@ -12,7 +12,7 @@ export const PChem3 = () => {
 			<Image img={"NbReaction"} 
 					bottom="2" 
 					right="5"
-					height="20"
+					minHeight="25"
 					justify
 					/>
 			</PCDIVHORIZ_1> 

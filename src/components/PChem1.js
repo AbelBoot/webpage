@@ -19,6 +19,7 @@ export const PChem1 = () => {
 					bottom="2" 
 					right="5"
 					minHeight="25"
+					justify
 					/>
                   </PCDIVVERT_1_Sm> 
 			      <PCDIVVERT_2_Sm>
