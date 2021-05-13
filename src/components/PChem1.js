@@ -14,11 +14,11 @@ export const PChem1 = () => {
 		    { widthS < 600 
 		    	? <>
 				<PCDIVVERT_0_Sm>
-      			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1" smallHeight="80">
+      			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1" smallHeight="25">
                     <Image img={"dibenzoTS"} 
 					bottom="2" 
 					right="5"
-					minHeight="20"
+					minHeight="25"
 					/>
                   </PCDIVVERT_1_Sm> 
 			      <PCDIVVERT_2_Sm>
