@@ -18,7 +18,7 @@ export const PChem1 = () => {
                     <Image img={"dibenzoTS"} 
 					bottom="2" 
 					right="5"
-					minHeight="50"
+					minHeight="20"
 					/>
                   </PCDIVVERT_1_Sm> 
 			      <PCDIVVERT_2_Sm>
