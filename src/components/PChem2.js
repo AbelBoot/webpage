@@ -36,7 +36,7 @@ export const PChem2 = () => {
 					  right="5"
 					  maxWidth="100"
 					  //height="40"
-					  minHeight="30"
+					  minHeight="40"
 					  /> 
 		    	  </PCDIVVERT_1> 
 			      <PCDIVVERT_2>
