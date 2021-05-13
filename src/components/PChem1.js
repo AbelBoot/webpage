@@ -14,7 +14,7 @@ export const PChem1 = () => {
 		    { widthS < 600 
 		    	? <>
 				<PCDIVVERT_0_Sm>
-      			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1" smallHeight="20">
+      			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1" smallHeight="80">
                     <Image img={"dibenzoTS"} 
 					bottom="2" 
 					right="5"
