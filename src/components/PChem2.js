@@ -15,7 +15,7 @@ export const PChem2 = () => {
 		    	? <>
 				<PCDIVVERT_0_Sm>
   			      <PCDIVVERT_1_Sm paddingRight="10" paddingLeft="4" smallHeight="25">
-				    <Image img={"DeltamethrinVerticalBig"} 
+				    <Image img={"DeltamethrinHorizontalBig"} 
 					  bottom="2" 
 					  right="5"
 					  //maxWidth="100"
