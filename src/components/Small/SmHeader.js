@@ -19,9 +19,9 @@ export const SmHeader = ({burger, setBurger}) => {
 		return (
 			<>
 
-			{ widthS < 400 
+			{/* { widthS < 400 
 				? <HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
-				:  null }
+				:  null } */}
             <HeadDiv1 marginBottom={.4}> 
             <HamburgerContainer key={widthS} burger={burger} onClick={handleClick}> 
             { burger
