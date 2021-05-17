@@ -74,7 +74,7 @@ padding-left: ${props => props.paddingLeft}vw;
 
 `
 export const PCDIVVERT_2_Sm = styled.div`
-width: 100%;
+width: 99%;
 `
 
 //check if adding this increase 

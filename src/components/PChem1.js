@@ -11,7 +11,7 @@ export const PChem1 = () => {
 	const widthS = useSize()
 
 		return( <PCDIVInt1>
-		    { widthS < 600 
+		    { widthS < 700 
 		    	? <>
 				<PCDIVVERT_0_Sm>
       			  <PCDIVVERT_1_Sm paddingRight="3" paddingLeft="1" smallHeight="25">
