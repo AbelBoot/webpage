@@ -64,6 +64,7 @@ max-width: 50%;
 export const PCDIVVERT_0_Sm = styled.div`  
 display: flex;
 flex-wrap: wrap;
+flex-direction: row-column-reverse;
 `
 export const PCDIVVERT_1_Sm = styled.div`  
 flex-basis: 100%;
@@ -74,7 +75,7 @@ padding-left: ${props => props.paddingLeft}vw;
 
 `
 export const PCDIVVERT_2_Sm = styled.div`
-width: 99%;
+width: 100%;
 `
 
 //check if adding this increase 
