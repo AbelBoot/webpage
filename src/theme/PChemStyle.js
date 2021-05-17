@@ -64,7 +64,7 @@ max-width: 50%;
 export const PCDIVVERT_0_Sm = styled.div`  
 display: flex;
 flex-wrap: wrap;
-flex-direction: row-reverse;
+flex-direction: column-reverse;
 `
 export const PCDIVVERT_1_Sm = styled.div`  
 flex-basis: 100%;
