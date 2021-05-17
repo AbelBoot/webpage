@@ -14,7 +14,7 @@ export const BgHeader = ({burger, setBurger}) => {
 		return (
 			<>
 			{widthS < 600 
-                ?  <HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
+                ?  null//<HeadDiv0><H5 color={violet}>Abel Locati</H5></HeadDiv0>
 				:  <HeadDiv0><SpanCV>Abel Locati</SpanCV></HeadDiv0>
 			}
 			<HeaderLink to="/" style={{textDecoration: "none", marginTop: "4px"}}><HeadDiv1> Projects </HeadDiv1></HeaderLink>
