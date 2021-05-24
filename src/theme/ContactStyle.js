@@ -4,6 +4,10 @@ import styled  from "styled-components"
 export const CONTACTDIV0 = styled.div`
   display: flex;
   flex-direction: row;
+  padding-left: 1em;
+  padding-right: 1em;
+  min-width: 100%;
+  justify-content: space-between;
 `
 export const CONTACTDIV1 = styled.div`
   width: 40%;
