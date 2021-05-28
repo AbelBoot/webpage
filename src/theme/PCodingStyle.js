@@ -56,10 +56,11 @@ export const PCODIV2_03 = styled.div`
   	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	padding-bottom: 3vh;
 `
 export const PCODIV2_03_Text = styled.div`
-
+	flex-basis: 40%;
 `
 export const PCODIV2_03_1 = styled.div`
 min-width: 20vh;
@@ -67,8 +68,9 @@ min-width: 20vh;
 export const PCODIV2_03_Icons = styled.div`
   	display: flex;
 	flex-direction: row;
-	justify-content: flex-end;
 	flex-wrap: wrap;
+	flex-basis: 60%;
+	justify-content: flex-end;
 `
 export const PCODIV2_03_2 = styled.div`
 `
