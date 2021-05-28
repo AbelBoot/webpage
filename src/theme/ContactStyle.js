@@ -21,6 +21,7 @@ export const CONTACTDIV2 = styled.div`
 	width: 50%;
 	max-height: 40%;
   padding-top: 1vh;
+  padding-right: 2em;
 `
 
 export const CONTACTDIV0_Sm = styled.div`

@@ -26,7 +26,7 @@ export const PDDIV3 = styled.div`
     display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-around;
 `
 
 export const PDDIV4 = styled.div`
