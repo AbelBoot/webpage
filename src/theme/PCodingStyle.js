@@ -67,9 +67,8 @@ min-width: 20vh;
 export const PCODIV2_03_Icons = styled.div`
   	display: flex;
 	flex-direction: row;
-	flex-basis: 60%;
+	justify-content: flex-end;
 	flex-wrap: wrap;
-	
 `
 export const PCODIV2_03_2 = styled.div`
 `
