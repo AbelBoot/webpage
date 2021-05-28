@@ -55,7 +55,7 @@ export const PCODIV2_02_4 = styled.div`
 export const PCODIV2_03 = styled.div`
   	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	padding-bottom: 3vh;
 `
 export const PCODIV2_03_Text = styled.div`
