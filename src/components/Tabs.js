@@ -8,7 +8,7 @@ import { OlTabs, H5 } from "../theme/SmallComp"
 export default class Tabs extends React.Component {
 	
 	state = {
-		activeTab: this.props.children[1].props.label
+		activeTab: this.props.children[0].props.label
 	}
 	clickingTab = (tab) => {
 		this.setState({activeTab: tab})
