@@ -101,7 +101,7 @@ export const PChem3 = () => {
 			</PCDIVQ_2>
 			<PCDIVQ_3>
 				  <H5 
-					maginBottom="30"
+					marginBottom="30"
 					textAlign="right">2011, 30, 15, 3999-4007, DOI: 10.1021/om200199e</H5>
 			</PCDIVQ_3>
 
