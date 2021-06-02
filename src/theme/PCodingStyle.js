@@ -1,4 +1,4 @@
-import styled  from "styled-components"
+import styled from "styled-components"
 
 export const PCODIV1 = styled.div`
   min-height: 20vh;
@@ -62,15 +62,12 @@ export const PCODIV2_03 = styled.div`
   	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	
 	align-items: flex-end;
-	
 	padding-bottom: 3vh;
 `
 
 export const PCODIV2_03_1 = styled.div`
 min-width: 50%;
-
 `
 
 export const PCODIV2_03_2 = styled.div`

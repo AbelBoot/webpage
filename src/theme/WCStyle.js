@@ -17,6 +17,7 @@ export const WCDIV1_03 = styled.div`
 `
 export const WCDIV1_04 = styled.div`
 flex-basis: 100%;
+padding-left: 2vw;
 `
 
 
