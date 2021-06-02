@@ -137,10 +137,10 @@ export const PChem = () => {
 				  <PChem1 key={test} />
 				</div>
 				<div {...chem2Props}>
-				  <PChem2 key={test} />
+				  <PChem2  key={test} />
 				</div>
 				<div {...chem3Props}>
-				  <PChem3 key={test} />
+				  <PChem3  key={test} />
 				</div>
 			</ Tabs>
 
