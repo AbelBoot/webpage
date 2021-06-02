@@ -132,15 +132,15 @@ export const PChem = () => {
 			</PCDIV1_2>
 			</PCDIVCONT>
 
-        	<Tabs key={test} {...mainChemTabProps} >
+        	<Tabs {...mainChemTabProps} >
 				<div {...chem1Props} >
-				  <PChem1  />
+				  <PChem1 key={test} />
 				</div>
 				<div {...chem2Props}>
-				  <PChem2   />
+				  <PChem2 key={test} />
 				</div>
 				<div {...chem3Props}>
-				  <PChem3   />
+				  <PChem3 key={test} />
 				</div>
 			</ Tabs>
 
