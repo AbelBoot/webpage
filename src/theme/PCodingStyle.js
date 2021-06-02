@@ -20,18 +20,19 @@ export const PCODIV2_00 = styled.div`
 export const PCODIV2_01 = styled.div`
   	display: flex;
 	flex-direction: row;
-
+	
 	padding-bottom: 3vh;
 	padding-top: 3vh;
 `
 export const PCODIV2_01_1 = styled.div`
-min-width: 20vh;
+min-width: 50%;
 `
 export const PCODIV2_01_2 = styled.div`
 `
 export const PCODIV2_01_3 = styled.div`
 `
 export const PCODIV2_01_4 = styled.div`
+
 `
 
 
@@ -39,16 +40,21 @@ export const PCODIV2_02 = styled.div`
   	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	
 	padding-bottom: 3vh;
 `
 export const PCODIV2_02_1 = styled.div`
-min-width: 20vh;
+min-width: 50%;
 `
 export const PCODIV2_02_2 = styled.div`
 `
 export const PCODIV2_02_3 = styled.div`
 `
+
+
+
 export const PCODIV2_02_4 = styled.div`
+
 `
 
 
@@ -56,36 +62,37 @@ export const PCODIV2_03 = styled.div`
   	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	
+	align-items: flex-end;
+	
 	padding-bottom: 3vh;
 `
-export const PCODIV2_03_Text = styled.div`
-	flex-basis: 40%;
-`
+
 export const PCODIV2_03_1 = styled.div`
-min-width: 20vh;
+min-width: 50%;
+
 `
-export const PCODIV2_03_Icons = styled.div`
-  	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	flex-basis: 60%;
-	justify-content: flex-end;
-`
+
 export const PCODIV2_03_2 = styled.div`
 `
 export const PCODIV2_03_3 = styled.div`
-min-width: 8vh;
+
 padding-left: 3vh;
 `
 export const PCODIV2_03_4 = styled.div`
-min-width: 8vh;
+padding-left: 3vh;
+padding-top: 3vh;
+align-self: flex-end;
+
 `
 export const PCODIV2_03_5 = styled.div`
 padding-left: 3vh;
+padding-top: 3vh;
+
 `
 export const PCODIV2_03_6 = styled.div`
 padding-left: 3vh;
+padding-top: 3vh;
 `
 
 

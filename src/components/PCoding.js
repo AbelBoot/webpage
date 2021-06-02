@@ -67,15 +67,15 @@ export const PCoding = () => {
 				</PCODIV2_02_4>
 				</PCODIV2_02>
 				<PCODIV2_03>
-				<PCODIV2_03_Text>
+				
 				<PCODIV2_03_1>
 				{locale === "en" && <H5><Span>Others</Span></H5>}
 				{locale === "fr" && <H5><Span>Autres</Span></H5>}
 				{locale === "sp" && <H5><Span>Otros</Span></H5>}
 				{locale === "pt" && <H5><Span>Outros</Span></H5>}
 				</PCODIV2_03_1>
-				</PCODIV2_03_Text>
-				<PCODIV2_03_Icons>
+				
+				
 				<PCODIV2_03_2>
 				<A target="_blank" href="https://github.com/AbelBoot/Drone-Gesture-Recognition" >
 				<Icon name="nodejs" width={"70"} color={violet}/>
@@ -95,7 +95,7 @@ export const PCoding = () => {
 			    <PCODIV2_03_6>
 				<Icon name="css" color={violet}/>
 				</PCODIV2_03_6>
-				</PCODIV2_03_Icons>
+				
 				</PCODIV2_03>
 				</PCODIV2_00>
 				<PCODIV3>
